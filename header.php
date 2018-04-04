@@ -55,25 +55,20 @@
 	<!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-<header id="main-header">
+
+<header class="main-header">
 	<div class="main-width">
-		<nav id="main-nav">
-			<a href="javascript:void(0);" class="menu-toggle">Menu</a>
-		</nav><!-- #main-nav -->
 		<h1>
-			<p>Fábrica de muebles de alta calidad para hogares y negocios</p>
 			<a href="<?php bloginfo('url'); ?>"><?php bloginfo( 'name' ); ?></a>
 		</h1>
-		<div class="contact-us">
-			<!--<div class="social">
-				<a href="javascript:void(0);" class="facebook">Facebook</a>
-				<a href="javascript:void(0);" class="instagram">Instagram</a>
-			</div> --> <!-- .social -->
-			<br><br>
-			<p>Llámanos +52 (55) 9000 3803</p>
-		</div><!-- .contact-us -->
-	</div><!-- .main-width -->
-</header><!-- #main-header -->
+		<a href="javascript:void(0);" class="menu-toggle"> Menu </a>
+		<div class="social-icons">
+			<a href="javascript:void(0);" class="social facebook">facebook</a>
+			<a href="javascript:void(0);" class="social instagram">instagram</a>
+		</div>
+	</div>
+</header>
+
 <div class="main-menu">
 	<a href="javascript:void(0);" class="btn-close">Cerrar</a>
 	<br class="clear">

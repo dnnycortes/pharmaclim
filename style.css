@@ -275,33 +275,47 @@ a {
   width: 980px;
   margin: 0 auto; }
 
-#main-header {
-  background: #FFF;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 5px 0;
-  padding-bottom: 15px;
-  position: fixed;
-  z-index: 91;
-  width: 100%; }
-  #main-header .main-width {
-    text-align: center;
-    overflow: hidden; }
-  #main-header h1 {
-    display: inline-block; }
-    #main-header h1 p {
-      margin-bottom: 10px; }
-    #main-header h1 a {
-      background: url(images/logo-soffah.png) no-repeat;
-      background-size: 100% auto;
-      width: 130px;
-      height: 54px;
-      text-indent: -99999px;
+.main-header {
+  width: 100%;
+  background: #e6e7e8;
+  padding: 10px 0;
+  overflow: hidden; }
+  .main-header .main-width {
+    position: relative; }
+  .main-header h1 {
+    width: 350px;
+    height: 174px;
+    background: url(images/pharmaclim-logo.png);
+    float: left; }
+    .main-header h1 a {
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      text-indent: -9999999px; }
+  .main-header .menu-toggle {
+    width: 84px;
+    height: 59px;
+    display: inline-block;
+    background: url(images/icon-menu.png);
+    text-indent: -9999999px;
+    float: right;
+    margin-top: 70px; }
+  .main-header .social-icons {
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .main-header .social-icons .social {
+      text-indent: -9999999px;
+      width: 24px;
+      height: 24px;
       display: inline-block; }
-  #main-header .contact-us {
-    text-align: right;
-    float: right; }
-    #main-header .contact-us p {
-      text-transform: uppercase; }
+      .main-header .social-icons .social.facebook {
+        background: url(images/social-facebook.png); }
+      .main-header .social-icons .social.instagram {
+        background: url(images/social-instagram.png); }
+
+.main-menu {
+  display: none; }
 
 #main-nav {
   float: left; }
