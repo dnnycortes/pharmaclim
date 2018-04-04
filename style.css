@@ -1,0 +1,744 @@
+@charset "UTF-8";
+/*
+Theme Name: Soffah
+Theme URI: www.soffah.com
+Author: Daniela Cortés
+Author URI: http://www.dnnycortes.com/
+Description: Templete generado exclusivamente para el uso interno de Soffah
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: fotos, responsive
+Text Domain: Soffah
+*/
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+	
+	Eric Meyer					:: http://ericmeyer.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+	
+-------------------------------------------------------------------------------*/
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+article, aside, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+img,
+object,
+embed {
+  max-width: 100%; }
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll; }
+
+/* we use a lot of ULs that aren't bulleted. 
+	don't forget to restore the bullets within content. */
+ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th {
+  font-weight: bold;
+  vertical-align: bottom; }
+
+td {
+  font-weight: normal;
+  vertical-align: top; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */ }
+
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+input[type="checkbox"] {
+  vertical-align: bottom;
+  *vertical-align: baseline; }
+
+.ie6 input {
+  vertical-align: text-bottom; }
+
+select, input, textarea {
+  font: 99% sans-serif; }
+
+table {
+  font-size: inherit;
+  font: 100%; }
+
+/* Accessible focus treatment
+	people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {
+  outline: none; }
+
+small {
+  font-size: 85%; }
+
+strong, th {
+  font-weight: bold; }
+
+td, td img {
+  vertical-align: top; }
+
+/* Make sure sup and sub don't screw with your line-heights
+	gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif; }
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+button {
+  cursor: pointer; }
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {
+  margin: 0; }
+
+/* make buttons play nice in IE */
+button {
+  width: auto;
+  overflow: visible; }
+
+/* scale images in IE7 more attractively */
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+/* prevent BG image flicker upon hover */
+.ie6 html {
+  filter: expression(document.execCommand("BackgroundImageCache", false, true)); }
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+/* Ok, this is where the fun starts.
+-------------------------------------------------------------------------------*/
+/* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
+body {
+  font: 13px Helmet, Freesans, sans-serif; }
+
+/* using local fonts? make sure to read up on Paul Irish's 
+	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
+/* we like off-black for text */
+body, select, input, textarea {
+  color: #333; }
+
+a {
+  color: #03f; }
+
+a:hover {
+  color: #69f; }
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection {
+  background: #00a8d8;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #00a8d8;
+  color: #fff;
+  text-shadow: none; }
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {
+  -webkit-tap-highlight-color: #fcd700; }
+
+ins {
+  background-color: #fcd700;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #fcd700;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+/* Media queries!
+-------------------------------------------------------------------------------*/
+/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+::-moz-selection {
+  background: #6d6e70;
+  color: #FFF;
+  text-shadow: none; }
+
+::selection {
+  background: #6d6e70;
+  color: #FFF;
+  text-shadow: none; }
+
+body, html {
+  height: 100%;
+  position: relative; }
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: lighter;
+  color: #6d6e70; }
+
+a {
+  text-decoration: none; }
+
+.clear {
+  clear: both; }
+
+.main-width {
+  width: 980px;
+  margin: 0 auto; }
+
+#main-header {
+  background: #FFF;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px 0;
+  padding-bottom: 15px;
+  position: fixed;
+  z-index: 91;
+  width: 100%; }
+  #main-header .main-width {
+    text-align: center;
+    overflow: hidden; }
+  #main-header h1 {
+    display: inline-block; }
+    #main-header h1 p {
+      margin-bottom: 10px; }
+    #main-header h1 a {
+      background: url(images/logo-soffah.png) no-repeat;
+      background-size: 100% auto;
+      width: 130px;
+      height: 54px;
+      text-indent: -99999px;
+      display: inline-block; }
+  #main-header .contact-us {
+    text-align: right;
+    float: right; }
+    #main-header .contact-us p {
+      text-transform: uppercase; }
+
+#main-nav {
+  float: left; }
+  #main-nav > a {
+    background: url(images/icon-menu.png);
+    background-size: 100% auto;
+    width: 35px;
+    height: 28px;
+    display: inline-block;
+    text-indent: -99999px;
+    margin-top: 20px; }
+
+.main-menu {
+  background: #6d6e70;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  margin-top: 100.5px;
+  z-index: 91;
+  width: 280px;
+  margin-left: -300px;
+  padding: 10px; }
+  .main-menu .btn-close {
+    float: right; }
+  .main-menu .menu li {
+    margin-bottom: 20px; }
+    .main-menu .menu li a {
+      color: #FFF;
+      text-transform: uppercase;
+      font-size: 16px; }
+      .main-menu .menu li a:hover {
+        color: #FFF; }
+    .main-menu .menu li .sub-menu {
+      margin-left: 20px;
+      margin-top: 20px; }
+      .main-menu .menu li .sub-menu li {
+        margin-bottom: 5px; }
+
+.breadcrumb {
+  overflow: hidden; }
+  .breadcrumb li {
+    color: #FFF;
+    text-transform: uppercase;
+    float: left;
+    margin-right: 5px; }
+    .breadcrumb li a {
+      color: #FFF;
+      margin-bottom: 10px; }
+
+#main-footer {
+  background: #2e2f2f;
+  border-top: 12px solid #ed1c24; }
+
+.social {
+  margin-bottom: 10px; }
+  .social a {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-size: 100% auto;
+    text-indent: 999999px; }
+  .social a.facebook {
+    background: url(images/icon-facebook.png); }
+  .social a.instagram {
+    background: url(images/icon-instagram.png); }
+
+.btn-scroll {
+  color: #FFF;
+  text-transform: uppercase;
+  background: url(images/icon-scroll.png) no-repeat;
+  background-position: 50% 30px;
+  display: inline-block;
+  height: 70px; }
+  .btn-scroll:hover {
+    color: #FFF; }
+
+.btn-close {
+  color: #FFF;
+  text-transform: uppercase;
+  background: url(images/icon-close.png) no-repeat;
+  background-position: 100% 50%;
+  background-size: 26% auto;
+  display: inline-block;
+  line-height: 30px;
+  padding-right: 30px; }
+  .btn-close:hover {
+    color: #FFF; }
+
+#wowslider-container4 .ws_bullets {
+  left: 10% !important;
+  top: 50% !important; }
+  #wowslider-container4 .ws_bullets a {
+    display: block !important;
+    margin: 5px 0px !important;
+    background: #6d6e70 !important;
+    padding: 5px !important;
+    box-shadow: 0px 0px 0px 1px #e0dfdf inset !important;
+    -webkit-border-radius: 3px !important;
+    -moz-border-radius: 3px !important;
+    -ms-border-radius: 3px !important;
+    border-radius: 3px !important; }
+    #wowslider-container4 .ws_bullets a.ws_selbull {
+      background: #FFF !important; }
+
+.divider {
+  background: #6d6e70 no-repeat 50% 50%;
+  background-size: 55% auto;
+  height: 100px; }
+  .divider.home {
+    background-image: url(images/divider-home.png); }
+
+.main-slider h2 {
+  position: absolute;
+  color: #FFF;
+  font-size: 40px;
+  left: 12%;
+  top: 135px;
+  text-transform: uppercase;
+  z-index: 90;
+  font-weight: normal; }
+.main-slider .btn-scroll {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  z-index: 90; }
+
+.home-products {
+  min-height: 500px;
+  overflow: hidden;
+  background: #1d1812;
+  position: relative; }
+  .home-products .productos-menu {
+    position: absolute;
+    top: 100px;
+    left: 15%;
+    z-index: 2; }
+    .home-products .productos-menu .menu-productos-container, .home-products .productos-menu .menu-menu-productos-container {
+      color: #FFF;
+      text-transform: uppercase;
+      margin-left: 45px; }
+      .home-products .productos-menu .menu-productos-container ul li, .home-products .productos-menu .menu-menu-productos-container ul li {
+        margin-bottom: 5px; }
+        .home-products .productos-menu .menu-productos-container ul li a, .home-products .productos-menu .menu-menu-productos-container ul li a {
+          color: #FFF;
+          font-size: 20px; }
+  .home-products h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: normal; }
+  .home-products .product {
+    width: 33.33%;
+    float: left;
+    position: relative;
+    overflow: hidden; }
+    .home-products .product img {
+      width: 100%;
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease;
+      margin-bottom: 0; }
+    .home-products .product h3 {
+      position: absolute;
+      z-index: 1;
+      top: 125px;
+      left: 15%;
+      font-size: 24px;
+      color: #FFF;
+      text-transform: uppercase;
+      font-weight: normal; }
+    .home-products .product.tapiceria h3 {
+      left: 36%; }
+  .home-products .product:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
+.home-pasion {
+  background: url(images/fondo-home-pasion.jpg) no-repeat center;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 60px 0; }
+  .home-pasion h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: normal;
+    margin-bottom: 150px; }
+  .home-pasion p {
+    color: #FFF;
+    font-size: 20px; }
+
+.home-proyectos {
+  background: url(images/fondo-home-proyectos.jpg) no-repeat center;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 60px 0; }
+  .home-proyectos h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: normal;
+    margin-bottom: 150px; }
+  .home-proyectos p {
+    color: #FFF;
+    font-size: 20px; }
+
+#contacto {
+  background: #6d6e70;
+  padding: 60px 0; }
+  #contacto h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: normal; }
+  #contacto .fm-form-container.fm-theme1 .fm-form .button-submit {
+    background: black !important;
+    border: 0 !important;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px; }
+  #contacto .fm-form .wdform-label-section {
+    display: none; }
+  #contacto #contact-form {
+    text-align: center !important; }
+    #contacto #contact-form input.wpcf7-text, #contacto #contact-form textarea.wpcf7-textarea {
+      min-width: 600px;
+      font-family: "Quicksand", sans-serif; }
+    #contacto #contact-form input.wpcf7-text {
+      height: 25px;
+      padding-left: 10px; }
+    #contacto #contact-form textarea.wpcf7-textarea {
+      padding-top: 10px;
+      padding-left: 10px;
+      margin-bottom: 10px; }
+    #contacto #contact-form input.wpcf7-submit {
+      background: black;
+      border: 0;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px;
+      color: #FFF;
+      line-height: 30px;
+      font-family: "Quicksand", sans-serif;
+      font-size: 16px; }
+    #contacto #contact-form .wpcf7-mail-sent-ok, #contacto #contact-form .wpcf7-response-output {
+      color: #FFF; }
+
+.subcategory {
+  min-height: 500px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 60px 0;
+  overflow: hidden; }
+  .subcategory h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: normal;
+    margin-bottom: 40px; }
+  .subcategory.tapiceria {
+    background-image: url(images/fondo-productos-tapiceria.jpg);
+    padding-top: 120px;
+    min-height: 485px; }
+    .subcategory.tapiceria h3 {
+      color: #FFF;
+      text-transform: uppercase;
+      font-weight: normal;
+      margin-bottom: 10px; }
+  .subcategory.carpinteria {
+    background-image: url(images/fondo-productos-carpinteria.jpg); }
+  .subcategory.superficie {
+    background-image: url(images/fondo-productos-superficie.jpg); }
+  .subcategory .product {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    margin-bottom: 70px; }
+    .subcategory .product p {
+      color: #FFF;
+      text-transform: uppercase;
+      font-size: 18px; }
+    .subcategory .product img {
+      width: 17%;
+      margin-bottom: 10px; }
+    .subcategory .product.loveseats img {
+      width: 25%; }
+    .subcategory .product.sofas img {
+      width: 31%; }
+    .subcategory .product.salas img {
+      width: 65%; }
+    .subcategory .product.cabeceras img {
+      width: 20%; }
+    .subcategory .product.taburetes img {
+      width: 16%; }
+    .subcategory .product.libreros img {
+      width: 12%; }
+    .subcategory .product.mesas {
+      padding-top: 30px; }
+      .subcategory .product.mesas img {
+        width: 33%; }
+    .subcategory .product.recamaras img {
+      width: 35%; }
+
+.productos {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 60px 0;
+  padding-top: 120px;
+  background-image: url(images/fondo-sillones-y-sofas.png);
+  position: relative; }
+  .productos .title {
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #FFF;
+    position: absolute;
+    bottom: 10%; }
+    .productos .title h2 {
+      margin-bottom: 20px;
+      font-size: 32px; }
+    .productos .title img {
+      width: 50%;
+      margin-left: 65px; }
+  .productos.sillones-y-sofas {
+    background-image: url(images/fondo-sillones-y-sofas.png); }
+  .productos.sillas {
+    background-image: url(images/fondo-sillas.png); }
+  .productos.recamaras {
+    background-image: url(images/fondo-recamaras.png); }
+  .productos.mesas-y-libreros {
+    background-image: url(images/fondo-mesas-y-libreros.png); }
+  .productos.comerciales {
+    background-image: url(images/fondo-comerciales.png); }
+  .productos.loveseats {
+    background-image: url(images/fondo-tapiceria-loveseats.jpg); }
+  .productos.sofas {
+    background-image: url(images/fondo-tapiceria-sofas.jpg); }
+  .productos.cabeceras {
+    background-image: url(images/fondo-tapiceria-cabeceras.jpg); }
+  .productos.taburetes {
+    background-image: url(images/fondo-tapiceria-taburetes.jpg); }
+  .productos.libreros {
+    background-image: url(images/fondo-carpinteria-libreros.jpg); }
+  .productos.mesas {
+    background-image: url(images/fondo-carpinteria-mesas.jpg); }
+
+.products-catalogue {
+  background: #FFF;
+  overflow: hidden;
+  padding: 30px 0; }
+  .products-catalogue .product-thumb {
+    width: 33.33%;
+    float: left;
+    margin-bottom: 20px; }
+    .products-catalogue .product-thumb h2 {
+      color: #6d6e70; }
+    .products-catalogue .product-thumb img {
+      width: 80%;
+      height: auto; }
+
+.galeria {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: black;
+  padding-top: 125px; }
+  .galeria .title h2 {
+    margin-bottom: 20px;
+    font-size: 32px; }
+
+.single-product {
+  padding-top: 120px; }
+  .single-product .breadcrumb {
+    margin-bottom: 30px; }
+    .single-product .breadcrumb a, .single-product .breadcrumb li {
+      color: #6d6e70; }
+  .single-product .main-content {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 40px; }
+  .single-product .info {
+    float: left;
+    width: 29%;
+    padding-right: 1%; }
+    .single-product .info h2 {
+      font-size: 32px;
+      font-weight: normal;
+      margin-bottom: 20px; }
+    .single-product .info p {
+      margin-bottom: 100px; }
+    .single-product .info img {
+      width: 80%;
+      height: auto; }
+  .single-product .gallery {
+    float: left;
+    width: 69%;
+    padding-left: 1%; }
+    .single-product .gallery .main-img {
+      width: 100%; }
+    .single-product .gallery p {
+      overflow: hidden; }
+      .single-product .gallery p div {
+        width: 150px;
+        height: 150px;
+        float: left;
+        margin-right: 8px;
+        margin-bottom: 10px;
+        border: 2px solid #6d6e70;
+        cursor: pointer;
+        text-align: center; }
+        .single-product .gallery p div img {
+          width: auto;
+          height: 100%; }
+        .single-product .gallery p div.active {
+          border: 2px solid #c7c8c9; }
+    .single-product .gallery ul {
+      overflow: hidden; }
+      .single-product .gallery ul li {
+        width: 150px;
+        height: 150px;
+        border: 1px solid #6d6e70;
+        float: left;
+        margin-right: 8px; }
+        .single-product .gallery ul li a {
+          text-align: center;
+          display: inline-block;
+          width: 100%;
+          height: 100%; }
+        .single-product .gallery ul li img {
+          height: 100%; }
+        .single-product .gallery ul li.active {
+          border: 4px solid #eeeeee; }
+
+/*# sourceMappingURL=style.css.map */
