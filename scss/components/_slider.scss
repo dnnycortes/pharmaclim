@@ -1,19 +1,29 @@
 //  Home Slider
 
-#wowslider-container4{
-	.ws_bullets{
-		left: 				10% !important;
-		top: 				50% !important;
-		a{
-			display: 		block !important;
-			margin: 		5px 0px !important;
-			background:		$sec-color !important;
-			padding:		5px !important;
-			box-shadow:		0px 0px 0px 1px #e0dfdf inset !important;
-			@include		border-radius(3px !important);
-			&.ws_selbull{
-				background:	$main-color !important;
-			}
+.owl-carousel{
+	.item{
+		height: 200px;
+		&.one{
+			background: yellow;
+		}
+		&.two{
+			background: green;
+			color: white;
 		}
 	}
+
+}
+
+.owl-dots .owl-dot{
+    display: inline-block;
+}
+
+.owl-dots .owl-dot span{
+    background: none repeat scroll 0 0 #869791;
+    border-radius: 20px;
+    display: block;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    width: 12px;
 }

@@ -52,9 +52,31 @@ register_nav_menus( array(
 
 /* Registra los javascripts del sitio */
 function my_scripts_method() {
+	wp_enqueue_style(
+		'owl-carousel-css',
+		get_stylesheet_directory_uri() . '/css/owl.carousel.min.css'
+	);
+	wp_enqueue_style(
+		'owl-theme-css',
+		get_stylesheet_directory_uri() . '/css/owl.theme.default.min.css'
+	);
+	wp_enqueue_style(
+		'animate-css',
+		get_stylesheet_directory_uri() . '/css/animate.css'
+	);
 	wp_enqueue_script(
 		'jquery-tools',
 		get_stylesheet_directory_uri() . '/js/jqueryTools.js',
+		array( 'jquery' )
+	);
+	wp_enqueue_script(
+		'jquery-min',
+		get_stylesheet_directory_uri() . '/js/jquery.min.js',
+		array( 'jquery' )
+	);
+	wp_enqueue_script(
+		'owl-carousel-js',
+		get_stylesheet_directory_uri() . '/js/owl.carousel.min.js',
 		array( 'jquery' )
 	);
 	wp_enqueue_script(
@@ -69,10 +91,6 @@ function my_scripts_method() {
 	wp_enqueue_style(
 		'main',
 		get_stylesheet_directory_uri() . '/style.css'
-	);
-	wp_enqueue_style(
-		'responsive-style',
-		get_stylesheet_directory_uri() . '/css/estilosResponsive.css'
 	);
 }
 
