@@ -606,193 +606,34 @@ a {
     #contacto #contact-form .wpcf7-mail-sent-ok, #contacto #contact-form .wpcf7-response-output {
       color: #FFF; }
 
-.subcategory {
-  min-height: 500px;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 60px 0;
+.cover {
+  position: relative;
+  min-height: 450px;
   overflow: hidden; }
-  .subcategory h2 {
-    font-size: 34px;
-    text-transform: uppercase;
-    color: #FFF;
-    font-weight: normal;
-    margin-bottom: 40px; }
-  .subcategory.tapiceria {
-    background-image: url(images/fondo-productos-tapiceria.jpg);
-    padding-top: 120px;
-    min-height: 485px; }
-    .subcategory.tapiceria h3 {
-      color: #FFF;
-      text-transform: uppercase;
-      font-weight: normal;
-      margin-bottom: 10px; }
-  .subcategory.carpinteria {
-    background-image: url(images/fondo-productos-carpinteria.jpg); }
-  .subcategory.superficie {
-    background-image: url(images/fondo-productos-superficie.jpg); }
-  .subcategory .product {
-    width: 33.33%;
-    float: left;
-    text-align: center;
-    margin-bottom: 70px; }
-    .subcategory .product p {
-      color: #FFF;
-      text-transform: uppercase;
-      font-size: 18px; }
-    .subcategory .product img {
-      width: 17%;
-      margin-bottom: 10px; }
-    .subcategory .product.loveseats img {
-      width: 25%; }
-    .subcategory .product.sofas img {
-      width: 31%; }
-    .subcategory .product.salas img {
-      width: 65%; }
-    .subcategory .product.cabeceras img {
-      width: 20%; }
-    .subcategory .product.taburetes img {
-      width: 16%; }
-    .subcategory .product.libreros img {
-      width: 12%; }
-    .subcategory .product.mesas {
-      padding-top: 30px; }
-      .subcategory .product.mesas img {
-        width: 33%; }
-    .subcategory .product.recamaras img {
-      width: 35%; }
-
-.productos {
-  min-height: 400px;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 60px 0;
-  padding-top: 120px;
-  background-image: url(images/fondo-sillones-y-sofas.png);
-  position: relative; }
-  .productos .title {
-    text-transform: uppercase;
-    font-weight: normal;
-    color: #FFF;
+  .cover img {
+    position: absolute; }
+  .cover h2 {
     position: absolute;
-    bottom: 10%; }
-    .productos .title h2 {
-      margin-bottom: 20px;
-      font-size: 32px; }
-    .productos .title img {
-      width: 50%;
-      margin-left: 65px; }
-  .productos.sillones-y-sofas {
-    background-image: url(images/fondo-sillones-y-sofas.png); }
-  .productos.sillas {
-    background-image: url(images/fondo-sillas.png); }
-  .productos.recamaras {
-    background-image: url(images/fondo-recamaras.png); }
-  .productos.mesas-y-libreros {
-    background-image: url(images/fondo-mesas-y-libreros.png); }
-  .productos.comerciales {
-    background-image: url(images/fondo-comerciales.png); }
-  .productos.loveseats {
-    background-image: url(images/fondo-tapiceria-loveseats.jpg); }
-  .productos.sofas {
-    background-image: url(images/fondo-tapiceria-sofas.jpg); }
-  .productos.cabeceras {
-    background-image: url(images/fondo-tapiceria-cabeceras.jpg); }
-  .productos.taburetes {
-    background-image: url(images/fondo-tapiceria-taburetes.jpg); }
-  .productos.libreros {
-    background-image: url(images/fondo-carpinteria-libreros.jpg); }
-  .productos.mesas {
-    background-image: url(images/fondo-carpinteria-mesas.jpg); }
+    color: #FFFFFF;
+    font-weight: lighter;
+    font-size: 35px; }
+  .cover .main-width {
+    padding: 20px 0; }
 
-.products-catalogue {
-  background: #FFF;
-  overflow: hidden;
-  padding: 30px 0; }
-  .products-catalogue .product-thumb {
-    width: 33.33%;
-    float: left;
-    margin-bottom: 20px; }
-    .products-catalogue .product-thumb h2 {
-      color: #6d6e70; }
-    .products-catalogue .product-thumb img {
-      width: 80%;
-      height: auto; }
-
-.galeria {
-  text-transform: uppercase;
-  font-weight: normal;
-  color: black;
-  padding-top: 125px; }
-  .galeria .title h2 {
-    margin-bottom: 20px;
-    font-size: 32px; }
-
-.single-product {
-  padding-top: 120px; }
-  .single-product .breadcrumb {
-    margin-bottom: 30px; }
-    .single-product .breadcrumb a, .single-product .breadcrumb li {
-      color: #6d6e70; }
-  .single-product .main-content {
-    width: 100%;
-    overflow: hidden;
-    padding-bottom: 40px; }
-  .single-product .info {
-    float: left;
-    width: 29%;
-    padding-right: 1%; }
-    .single-product .info h2 {
-      font-size: 32px;
-      font-weight: normal;
-      margin-bottom: 20px; }
-    .single-product .info p {
-      margin-bottom: 100px; }
-    .single-product .info img {
-      width: 80%;
-      height: auto; }
-  .single-product .gallery {
-    float: left;
-    width: 69%;
-    padding-left: 1%; }
-    .single-product .gallery .main-img {
-      width: 100%; }
-    .single-product .gallery p {
-      overflow: hidden; }
-      .single-product .gallery p div {
-        width: 150px;
-        height: 150px;
-        float: left;
-        margin-right: 8px;
-        margin-bottom: 10px;
-        border: 2px solid #6d6e70;
-        cursor: pointer;
-        text-align: center; }
-        .single-product .gallery p div img {
-          width: auto;
-          height: 100%; }
-        .single-product .gallery p div.active {
-          border: 2px solid #c7c8c9; }
-    .single-product .gallery ul {
-      overflow: hidden; }
-      .single-product .gallery ul li {
-        width: 150px;
-        height: 150px;
-        border: 1px solid #6d6e70;
-        float: left;
-        margin-right: 8px; }
-        .single-product .gallery ul li a {
-          text-align: center;
-          display: inline-block;
-          width: 100%;
-          height: 100%; }
-        .single-product .gallery ul li img {
-          height: 100%; }
-        .single-product .gallery ul li.active {
-          border: 4px solid #eeeeee; }
+.content {
+  background: #e6e7e8;
+  padding: 20px 0;
+  color: #685399; }
+  .content h2 {
+    font-size: 28px;
+    font-weight: lighter;
+    margin-bottom: 15px; }
+  .content p {
+    margin-bottom: 22px;
+    font-size: 15px;
+    line-height: 22px; }
+    .content p span {
+      width: 100%;
+      display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
