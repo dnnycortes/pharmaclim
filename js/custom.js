@@ -7,6 +7,7 @@ $(document).ready(function(){
 		dots: true,
 		autoplayHoverPause: true,
 		animateOut: 'bounceOutUp',
-		animateIn: 'bounceInUp'
+		animateIn: 'bounceInUp',
+		mouseDrag: false
 	});
 });
