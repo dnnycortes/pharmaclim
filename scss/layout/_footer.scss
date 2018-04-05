@@ -1,6 +1,16 @@
 // Footer
 
-#main-footer{
-	background:				darken($sec-color, 25%);
-	border-top:				12px solid #ed1c24;
+.main-footer{
+	background:				#685399;
+	min-height: 			120px;
+	.main-width{
+		background: url(images/pharmaclim-logo-footer.png) no-repeat;
+		background-size: auto 100%;
+		min-height: 			120px;
+	}
+}
+
+.sec-footer{
+	background: #000000;
+	min-height: 30px;
 }

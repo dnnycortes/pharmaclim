@@ -273,7 +273,7 @@ a {
   clear: both; }
 
 .main-width {
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto; }
 
 .main-header {
@@ -282,7 +282,8 @@ a {
   padding: 10px 0;
   overflow: hidden; }
   .main-header .main-width {
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
   .main-header h1 {
     width: 200px;
     height: 100px;
@@ -369,9 +370,17 @@ a {
       color: #FFF;
       margin-bottom: 10px; }
 
-#main-footer {
-  background: #2e2f2f;
-  border-top: 12px solid #ed1c24; }
+.main-footer {
+  background: #685399;
+  min-height: 120px; }
+  .main-footer .main-width {
+    background: url(images/pharmaclim-logo-footer.png) no-repeat;
+    background-size: auto 100%;
+    min-height: 120px; }
+
+.sec-footer {
+  background: #000000;
+  min-height: 30px; }
 
 .social {
   margin-bottom: 10px; }
@@ -438,7 +447,7 @@ a {
 .owl-carousel .owl-dots {
   position: absolute;
   bottom: 10%;
-  left: 100px; }
+  left: 5%; }
   .owl-carousel .owl-dots .owl-dot {
     display: block; }
     .owl-carousel .owl-dots .owl-dot span {
