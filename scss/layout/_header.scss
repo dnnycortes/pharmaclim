@@ -8,9 +8,10 @@
 		position: relative;
 	}
 	h1{
-		width: 350px;
-		height: 174px;
-		background: url(images/pharmaclim-logo.png);
+		width: 220px;
+		height: 109px;
+		background: url(images/pharmaclim-logo.png) no-repeat;
+		background-size: 100% auto;
 		float: left;
 		a{
 			width: 100%;
@@ -20,10 +21,10 @@
 		}
 	}
 	.menu-toggle{
-		width: 84px;
-		height: 59px;
-		display: inline-block;
-		background: url(images/icon-menu.png);
+		width: 40px;
+		height: 27px;
+		background: url(images/icon-menu.png) no-repeat;
+		background-size: 100% auto;
 		text-indent: -9999999px;
 		float: right;
 		margin-top: 70px;
@@ -34,14 +35,16 @@
 		right: 0;
 		.social{
 			text-indent: -9999999px;
-			width: 24px;
-			height: 24px;
+			width: 18px;
+			height: 18px;
 			display: inline-block;
 			&.facebook{
-				background: url(images/social-facebook.png);
+				background: url(images/social-facebook.png) no-repeat;
+				background-size: 100% auto;
 			}
 			&.instagram{
-				background: url(images/social-instagram.png);
+				background: url(images/social-instagram.png) no-repeat;
+				background-size: 100% auto;
 			}
 		}
 	}
