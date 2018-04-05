@@ -80,6 +80,11 @@ function my_scripts_method() {
 		array( 'jquery' )
 	);
 	wp_enqueue_script(
+		'mousewheel-js',
+		get_stylesheet_directory_uri() . '/js/jquery.mousewheel.min.js',
+		array( 'jquery' )
+	);
+	wp_enqueue_script(
 		'custom-script',
 		get_stylesheet_directory_uri() . '/js/custom.js',
 		array( 'jquery' )

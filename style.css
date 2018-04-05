@@ -261,8 +261,9 @@ body, html {
   position: relative; }
 
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: lighter;
+  font-size: 15px;
   color: #6d6e70; }
 
 a {
@@ -283,8 +284,8 @@ a {
   .main-header .main-width {
     position: relative; }
   .main-header h1 {
-    width: 220px;
-    height: 109px;
+    width: 200px;
+    height: 100px;
     background: url(images/pharmaclim-logo.png) no-repeat;
     background-size: 100% auto;
     float: left; }
@@ -408,7 +409,7 @@ a {
     color: #FFF; }
 
 .owl-carousel .slide {
-  min-height: 650px;
+  min-height: 600px;
   position: relative; }
   .owl-carousel .slide.one {
     background: url(images/home1.jpg);
@@ -574,7 +575,7 @@ a {
     text-align: center !important; }
     #contacto #contact-form input.wpcf7-text, #contacto #contact-form textarea.wpcf7-textarea {
       min-width: 600px;
-      font-family: "Quicksand", sans-serif; }
+      font-family: "Ubuntu", sans-serif; }
     #contacto #contact-form input.wpcf7-text {
       height: 25px;
       padding-left: 10px; }
@@ -591,7 +592,7 @@ a {
       border-radius: 5px;
       color: #FFF;
       line-height: 30px;
-      font-family: "Quicksand", sans-serif;
+      font-family: "Ubuntu", sans-serif;
       font-size: 16px; }
     #contacto #contact-form .wpcf7-mail-sent-ok, #contacto #contact-form .wpcf7-response-output {
       color: #FFF; }
