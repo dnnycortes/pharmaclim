@@ -635,5 +635,18 @@ a {
     .content p span {
       width: 100%;
       display: inline-block; }
+  .content.servicios ul {
+    list-style-type: lower-latin;
+    margin-left: 15px; }
+    .content.servicios ul li {
+      line-height: 25px; }
+    .content.servicios ul ul {
+      list-style-type: lower-roman;
+      margin-left: 45px;
+      margin-bottom: 20px; }
+      .content.servicios ul ul ul {
+        list-style-type: decimal;
+        margin-left: 45px;
+        margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */
