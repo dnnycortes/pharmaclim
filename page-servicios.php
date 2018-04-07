@@ -9,7 +9,7 @@ get_header(); ?>
 
 <div id="wrapper">
 	<div class="cover">
-		<img src="<?php echo get_template_directory_uri(); ?>/images/cover-quienes-somos.jpg" alt="">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/cover-servicios.jpg" alt="">
 		<div class="main-width">
 			<h2>Servicios</h2>
 		</div>

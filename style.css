@@ -619,6 +619,8 @@ a {
     font-size: 35px; }
   .cover .main-width {
     padding: 20px 0; }
+  .cover.nosotros h2 {
+    color: #685399; }
 
 .content {
   background: #e6e7e8;
