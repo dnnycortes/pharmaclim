@@ -320,55 +320,25 @@ a {
         background-size: 100% auto; }
 
 .main-menu {
-  display: none; }
-
-#main-nav {
-  float: left; }
-  #main-nav > a {
-    background: url(images/icon-menu.png);
-    background-size: 100% auto;
-    width: 35px;
-    height: 28px;
-    display: inline-block;
-    text-indent: -99999px;
-    margin-top: 20px; }
-
-.main-menu {
-  background: #6d6e70;
+  background: #414042;
   position: fixed;
-  left: 0;
+  right: 0;
   height: 100%;
-  margin-top: 100.5px;
+  margin-top: 0;
   z-index: 91;
   width: 280px;
-  margin-left: -300px;
-  padding: 10px; }
+  margin-right: -320px;
+  padding: 20px; }
   .main-menu .btn-close {
-    float: right; }
+    float: right;
+    margin-bottom: 10px; }
   .main-menu .menu li {
     margin-bottom: 20px; }
     .main-menu .menu li a {
-      color: #FFF;
-      text-transform: uppercase;
+      color: #FFFFFF;
       font-size: 16px; }
       .main-menu .menu li a:hover {
-        color: #FFF; }
-    .main-menu .menu li .sub-menu {
-      margin-left: 20px;
-      margin-top: 20px; }
-      .main-menu .menu li .sub-menu li {
-        margin-bottom: 5px; }
-
-.breadcrumb {
-  overflow: hidden; }
-  .breadcrumb li {
-    color: #FFF;
-    text-transform: uppercase;
-    float: left;
-    margin-right: 5px; }
-    .breadcrumb li a {
-      color: #FFF;
-      margin-bottom: 10px; }
+        color: #FFFFFF; }
 
 .main-footer {
   background: #685399;

@@ -52,5 +52,29 @@
 }
 
 .main-menu{
-	display: none;
+	background: #414042;
+	position: fixed;
+	right: 0;
+	height:	100%;
+	margin-top:	0;
+	z-index: 91;
+	width: 280px;
+	margin-right: -320px;
+	padding: 20px;
+	.btn-close{
+		float: right;
+		margin-bottom: 10px;
+	}
+	.menu{
+		li{
+			margin-bottom:				20px;
+			a{
+				color:					#FFFFFF;
+				font-size:				16px;
+				&:hover{
+					color:				#FFFFFF;
+				}
+			}
+		}
+	}
 }

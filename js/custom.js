@@ -26,4 +26,16 @@ $(document).ready(function(){
 	});*/
 
 
+	/**
+	 * Show / hide menu navigation
+	 */
+	$('.main-header .menu-toggle, .main-menu .btn-close').click(function(){
+		if($('.main-menu').css("margin-right") == "0px"){
+		   $('.main-menu').animate({"margin-right": '-=320'});
+		} else {
+		   $('.main-menu').animate({"margin-right": '+=320'});
+		}
+	 });
+
+
 });
