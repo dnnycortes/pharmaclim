@@ -650,5 +650,12 @@ a {
         list-style-type: decimal;
         margin-left: 45px;
         margin-bottom: 0; }
+  .content.clientes .logos {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .content.clientes .logos img {
+      margin-bottom: 45px; }
 
 /*# sourceMappingURL=style.css.map */

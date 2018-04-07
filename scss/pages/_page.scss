@@ -60,4 +60,15 @@
 			}
 		}
 	}
+	&.clientes{
+		.logos{
+			display: flex;
+			align-items: baseline;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			img{
+				margin-bottom: 45px;
+			}
+		}
+	}
 }
