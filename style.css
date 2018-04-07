@@ -657,5 +657,23 @@ a {
     flex-wrap: wrap; }
     .content.clientes .logos img {
       margin-bottom: 45px; }
+  .content.contacto .contact-form {
+    text-align: center; }
+    .content.contacto .contact-form input[type="text"], .content.contacto .contact-form input[type="email"] {
+      height: 30px; }
+    .content.contacto .contact-form input[type="text"], .content.contacto .contact-form input[type="email"], .content.contacto .contact-form textarea {
+      width: 60%;
+      border: 0;
+      padding-left: 10px; }
+    .content.contacto .contact-form textarea {
+      resize: none;
+      padding-top: 10px; }
+    .content.contacto .contact-form input[type="submit"] {
+      background: #000000;
+      color: #FFFFFF;
+      line-height: 29px;
+      padding: 0 16px;
+      border-radius: 6px;
+      border: 0; }
 
 /*# sourceMappingURL=style.css.map */
