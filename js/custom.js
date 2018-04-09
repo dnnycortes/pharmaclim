@@ -37,5 +37,22 @@ $(document).ready(function(){
 		}
 	 });
 
+	/**
+	 * Adding animation to content when scrolling
+	 */
+	$(window).scroll(function() {
+        if ($(document).scrollTop() > 100) {
+            $('.content.servicios').css({
+				top: 300
+			});
+        }
+        else {
+           $('.content.servicios').css({
+				top: 500
+		   });
+        }
+    });
+
+
 
 });

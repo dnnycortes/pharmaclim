@@ -17,15 +17,13 @@
 	}
 }
 .btn-scroll{
-	color:					$main-color;
 	text-transform:			uppercase;
 	background:				url(images/icon-scroll.png) no-repeat;
-	background-position:	50% 30px;
+	background-size: 		100% auto;
 	display:				inline-block;
-	height:					70px;
-	&:hover{
-		color:				$main-color;
-	}
+	width: 					50px;
+	height:					48px;
+	text-indent: 			-999999px;
 }
 .btn-close{
 	color:					$main-color;

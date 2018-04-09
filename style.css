@@ -1,15 +1,15 @@
 @charset "UTF-8";
 /*
-Theme Name: Soffah
-Theme URI: www.soffah.com
+Theme Name: Pharma Clim
+Theme URI: www.pharmaclim.com
 Author: Daniela Cortés
 Author URI: http://www.dnnycortes.com/
-Description: Templete generado exclusivamente para el uso interno de Soffah
+Description: Templete generado exclusivamente para el uso interno de Pharma Clim
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: fotos, responsive
-Text Domain: Soffah
+Text Domain: Pharma Clim
 */
 /*
 	HTML5 Reset :: style.css
@@ -276,6 +276,9 @@ a {
   max-width: 980px;
   margin: 0 auto; }
 
+#wrapper {
+  position: relative; }
+
 .main-header {
   width: 100%;
   background: #e6e7e8;
@@ -366,14 +369,13 @@ a {
     background: url(images/icon-instagram.png); }
 
 .btn-scroll {
-  color: #FFF;
   text-transform: uppercase;
   background: url(images/icon-scroll.png) no-repeat;
-  background-position: 50% 30px;
+  background-size: 100% auto;
   display: inline-block;
-  height: 70px; }
-  .btn-scroll:hover {
-    color: #FFF; }
+  width: 50px;
+  height: 48px;
+  text-indent: -999999px; }
 
 .btn-close {
   color: #FFF;
@@ -579,7 +581,10 @@ a {
 .cover {
   position: relative;
   min-height: 450px;
-  overflow: hidden; }
+  overflow: hidden;
+  text-align: center; }
+  .cover .btn-scroll {
+    margin-top: 30px; }
   .cover img {
     position: absolute; }
   .cover h2 {
@@ -591,11 +596,18 @@ a {
     padding: 20px 0; }
   .cover.nosotros h2 {
     color: #685399; }
+  .cover.servicios {
+    background: url(images/cover-servicios.jpg) no-repeat center;
+    min-height: 550px;
+    background-attachment: fixed;
+    background-size: cover; }
 
 .content {
   background: #e6e7e8;
-  padding: 20px 0;
+  padding: 20px 0 0 0;
   color: #685399; }
+  .content .main-width {
+    padding-bottom: 20px; }
   .content h2 {
     font-size: 28px;
     font-weight: lighter;
@@ -607,19 +619,29 @@ a {
     .content p span {
       width: 100%;
       display: inline-block; }
-  .content.servicios ul {
-    list-style-type: lower-latin;
-    margin-left: 15px; }
-    .content.servicios ul li {
-      line-height: 25px; }
-    .content.servicios ul ul {
-      list-style-type: lower-roman;
-      margin-left: 45px;
-      margin-bottom: 20px; }
-      .content.servicios ul ul ul {
-        list-style-type: decimal;
+  .content.servicios {
+    background: #e6e7e8;
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
+    .content.servicios ul {
+      list-style-type: lower-latin;
+      margin-left: 15px; }
+      .content.servicios ul li {
+        line-height: 25px; }
+      .content.servicios ul ul {
+        list-style-type: lower-roman;
         margin-left: 45px;
-        margin-bottom: 0; }
+        margin-bottom: 20px; }
+        .content.servicios ul ul ul {
+          list-style-type: decimal;
+          margin-left: 45px;
+          margin-bottom: 0; }
   .content.clientes .logos {
     display: flex;
     align-items: baseline;
