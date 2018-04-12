@@ -43,12 +43,12 @@ $(document).ready(function(){
 	$(window).scroll(function() {
         if ($(document).scrollTop() > 100) {
             $('.content.servicios').css({
-				top: 300
+				top: '50%'
 			});
         }
         else {
            $('.content.servicios').css({
-				top: 500
+				top: '100%'
 		   });
         }
     });
