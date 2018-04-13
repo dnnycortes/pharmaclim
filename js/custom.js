@@ -91,6 +91,16 @@ $(document).ready(function(){
 				top: '100%'
 			});
 		}
+
+		if( $(document).scrollTop() > 100 ){
+			$('.content.noticias').css({
+				top: '50%'
+			});
+		} else {
+			$('.content.noticias').css({
+				top: '100%'
+			});
+		}
     });
 
 
