@@ -9,9 +9,9 @@ get_header(); ?>
 
 <div id="wrapper">
 	<div class="cover nosotros">
-		<img src="<?php echo get_template_directory_uri(); ?>/images/cover-por-que-nosotros.jpg" alt="">
 		<div class="main-width">
 			<h2>¿Por qué nosotros?</h2>
+			<a href="javascript:void(0);" class="btn-scroll">Scroll</a>
 		</div>
 	</div>
 	<div class="content nosotros">
@@ -32,7 +32,7 @@ distinción que nos queremos ganar con dedicación, esfuerzo y amor por lo que h
 			<p>Los saludamos con respeto y admiración, porque buscan soluciones por encima de las limitaciones presupuestales.</p>
 			<p>Lourdes Molina <br> Directora Técnica.</p>
 
-		</div>
-	</div>
+		</div><!-- .main-width -->
+		<?php get_footer(); ?>
+	</div><!-- .content -->
 </div><!-- #wrapper -->
-<?php get_footer(); ?>

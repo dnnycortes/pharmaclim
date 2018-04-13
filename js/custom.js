@@ -61,6 +61,16 @@ $(document).ready(function(){
 				top: '100%'
 			});
 		}
+
+		if( $(document).scrollTop() > 100 ){
+			$('.content.nosotros').css({
+				top: '50%'
+			});
+		} else {
+			$('.content.nosotros').css({
+				top: '100%'
+			});
+		}
     });
 
 

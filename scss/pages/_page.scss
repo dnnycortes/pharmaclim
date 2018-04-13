@@ -24,16 +24,17 @@
 	.main-width{
 		padding: 20px 0;
 	}
-	&.nosotros{
-		h2{
-			color: #685399;
-		}
-	}
 	&.servicios{
 		background-image: url(images/cover-servicios.jpg);
 	}
 	&.quienes-somos{
 		background-image: url(images/cover-quienes-somos.jpg);
+	}
+	&.nosotros{
+		background-image: url(images/cover-por-que-nosotros.jpg);
+		h2{
+			color: #685399;
+		}
 	}
 }
 
@@ -59,7 +60,7 @@
 			display: inline-block;
 		}
 	}
-	&.servicios, &.quienes-somos{
+	&.servicios, &.quienes-somos, &.nosotros{
 		background: #e6e7e8;
 		position: absolute;
 		top: 100%;
