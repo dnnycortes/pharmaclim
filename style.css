@@ -389,48 +389,36 @@ a {
   .btn-close:hover {
     color: #FFF; }
 
-.owl-carousel .slide {
-  min-height: 600px;
-  position: relative; }
-  .owl-carousel .slide.one {
-    background: url(images/home1.jpg);
-    background-size: 100% auto; }
-    .owl-carousel .slide.one .slide-info ul {
+.slide {
+  position: relative;
+  min-height: 700px;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .slide.one {
+    background-image: url(images/home1.jpg); }
+    .slide.one .slide-info ul {
       list-style: lower-alpha; }
-  .owl-carousel .slide.two {
-    background: url(images/home2.jpg);
-    background-size: 100% auto; }
-  .owl-carousel .slide .slide-info {
+  .slide.two {
+    background-image: url(images/home2.jpg); }
+  .slide .slide-info {
     color: #675598;
     background: #e6e7e8;
     position: absolute;
     bottom: 0;
     width: 100%;
     padding: 15px 0; }
-    .owl-carousel .slide .slide-info h2 {
+    .slide .slide-info h2 {
       text-transform: uppercase;
       font-size: 20px;
       margin-bottom: 10px; }
-    .owl-carousel .slide .slide-info p {
+    .slide .slide-info p {
       margin-bottom: 10px; }
-    .owl-carousel .slide .slide-info ul {
+    .slide .slide-info ul {
       list-style: disc;
       margin-left: 14px; }
-.owl-carousel .owl-dots {
-  position: absolute;
-  bottom: 10%;
-  left: 5%; }
-  .owl-carousel .owl-dots .owl-dot {
-    display: block; }
-    .owl-carousel .owl-dots .owl-dot span {
-      background: none repeat scroll 0 0 #675598;
-      border-radius: 20px;
-      display: block;
-      height: 10px;
-      margin: 3px 7px;
-      width: 10px; }
-    .owl-carousel .owl-dots .owl-dot.active span {
-      background-color: #FFFFFF; }
 
 .divider {
   background: #6d6e70 no-repeat 50% 50%;

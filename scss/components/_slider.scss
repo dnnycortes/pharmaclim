@@ -1,62 +1,40 @@
 //  Home Slider
 
-.owl-carousel{
-	.slide{
-		min-height: 600px;
-		position: relative;
-		&.one{
-			background: url(images/home1.jpg);
-			background-size: 100% auto;
-			.slide-info ul{
-				list-style: lower-alpha;
-			}
-		}
-		&.two{
-			background: url(images/home2.jpg);
-			background-size: 100% auto;
-		}
-		.slide-info{
-			color: #675598;
-			background: #e6e7e8;
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-			padding: 15px 0;
-			h2{
-				text-transform: uppercase;
-				font-size: 20px;
-				margin-bottom: 10px;
-			}
-			p{
-				margin-bottom: 10px;
-			}
-			ul{
-				list-style: disc;
-				margin-left: 14px;
-			}
+.slide{
+	position: relative;
+	min-height: 700px;
+	overflow: hidden;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	&.one{
+		background-image: url(images/home1.jpg);
+		.slide-info ul{
+			list-style: lower-alpha;
 		}
 	}
-	.owl-dots{
+	&.two{
+		background-image: url(images/home2.jpg);
+	}
+	.slide-info{
+		color: #675598;
+		background: #e6e7e8;
 		position: absolute;
-		bottom: 10%;
-		left: 5%;
-		.owl-dot{
-			display: block;
-			span{
-				background: none repeat scroll 0 0 #675598;
-				border-radius: 20px;
-				display: block;
-				height: 10px;
-				margin: 3px 7px;
-				//opacity: 0.5;
-				width: 10px;
-			}
-			&.active{
-				span{
-					background-color: #FFFFFF;
-				}
-			}
+		bottom: 0;
+		width: 100%;
+		padding: 15px 0;
+		h2{
+			text-transform: uppercase;
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		p{
+			margin-bottom: 10px;
+		}
+		ul{
+			list-style: disc;
+			margin-left: 14px;
 		}
 	}
-
 }
