@@ -8,10 +8,10 @@ get_header(); ?>
 
 
 <div id="wrapper">
-	<div class="cover">
-		<img src="<?php echo get_template_directory_uri(); ?>/images/cover-clientes.jpg" alt="">
+	<div class="cover clientes">
 		<div class="main-width">
 			<h2>Clientes</h2>
+			<a href="javascript:void(0);" class="btn-scroll">Scroll</a>
 		</div>
 	</div>
 	<div class="content clientes">
@@ -37,7 +37,7 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/images/logo-holcim.png" alt="">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/logo-linkedin.png" alt="">
 			</div>
-		</div>
-	</div>
+		</div><!-- .main-width -->
+		<?php get_footer(); ?>
+	</div><!-- .content -->
 </div><!-- #wrapper -->
-<?php get_footer(); ?>

@@ -36,6 +36,9 @@
 			color: #685399;
 		}
 	}
+	&.clientes{
+		background-image: url(images/cover-clientes.jpg);
+	}
 }
 
 
@@ -60,7 +63,7 @@
 			display: inline-block;
 		}
 	}
-	&.servicios, &.quienes-somos, &.nosotros{
+	&.servicios, &.quienes-somos, &.nosotros, &.clientes{
 		background: #e6e7e8;
 		position: absolute;
 		top: 100%;

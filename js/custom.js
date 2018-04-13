@@ -71,6 +71,16 @@ $(document).ready(function(){
 				top: '100%'
 			});
 		}
+
+		if( $(document).scrollTop() > 100 ){
+			$('.content.clientes').css({
+				top: '50%'
+			});
+		} else {
+			$('.content.clientes').css({
+				top: '100%'
+			});
+		}
     });
 
 

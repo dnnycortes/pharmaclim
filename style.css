@@ -606,6 +606,8 @@ a {
     background-image: url(images/cover-por-que-nosotros.jpg); }
     .cover.nosotros h2 {
       color: #685399; }
+  .cover.clientes {
+    background-image: url(images/cover-clientes.jpg); }
 
 .content {
   background: #e6e7e8;
@@ -624,7 +626,7 @@ a {
     .content p span {
       width: 100%;
       display: inline-block; }
-  .content.servicios, .content.quienes-somos, .content.nosotros {
+  .content.servicios, .content.quienes-somos, .content.nosotros, .content.clientes {
     background: #e6e7e8;
     position: absolute;
     top: 100%;
