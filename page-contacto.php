@@ -8,10 +8,10 @@ get_header(); ?>
 
 
 <div id="wrapper">
-	<div class="cover">
-		<img src="<?php echo get_template_directory_uri(); ?>/images/cover-contacto.jpg" alt="">
+	<div class="cover contacto">
 		<div class="main-width">
 			<h2>Contacto</h2>
+			<a href="javascript:void(0);" class="btn-scroll">Scroll</a>
 		</div>
 	</div>
 	<div class="content contacto">
@@ -31,7 +31,7 @@ get_header(); ?>
 				<p><?php _e('Lo sentimos, ningún post cumple con los criterios de búsqueda.'); ?></p>
 			<?php endif; ?>
 			<!--TERMINA EL LOOP-->
-		</div>
-	</div>
+		</div><!-- .main-width -->
+		<?php get_footer(); ?>
+	</div><!-- .content -->
 </div><!-- #wrapper -->
-<?php get_footer(); ?>

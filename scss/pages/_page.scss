@@ -39,6 +39,9 @@
 	&.clientes{
 		background-image: url(images/cover-clientes.jpg);
 	}
+	&.contacto{
+		background-image: url(images/cover-contacto.jpg);
+	}
 }
 
 
@@ -63,7 +66,7 @@
 			display: inline-block;
 		}
 	}
-	&.servicios, &.quienes-somos, &.nosotros, &.clientes{
+	&.servicios, &.quienes-somos, &.nosotros, &.clientes, &.contacto{
 		background: #e6e7e8;
 		position: absolute;
 		top: 100%;

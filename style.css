@@ -608,6 +608,8 @@ a {
       color: #685399; }
   .cover.clientes {
     background-image: url(images/cover-clientes.jpg); }
+  .cover.contacto {
+    background-image: url(images/cover-contacto.jpg); }
 
 .content {
   background: #e6e7e8;
@@ -626,7 +628,7 @@ a {
     .content p span {
       width: 100%;
       display: inline-block; }
-  .content.servicios, .content.quienes-somos, .content.nosotros, .content.clientes {
+  .content.servicios, .content.quienes-somos, .content.nosotros, .content.clientes, .content.contacto {
     background: #e6e7e8;
     position: absolute;
     top: 100%;

@@ -81,6 +81,16 @@ $(document).ready(function(){
 				top: '100%'
 			});
 		}
+
+		if( $(document).scrollTop() > 100 ){
+			$('.content.contacto').css({
+				top: '50%'
+			});
+		} else {
+			$('.content.contacto').css({
+				top: '100%'
+			});
+		}
     });
 
 
