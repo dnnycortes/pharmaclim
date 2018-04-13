@@ -580,9 +580,13 @@ a {
 
 .cover {
   position: relative;
-  min-height: 450px;
+  min-height: 700px;
   overflow: hidden;
-  text-align: center; }
+  text-align: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
   .cover .btn-scroll {
     margin-top: 30px; }
   .cover img {
@@ -597,10 +601,9 @@ a {
   .cover.nosotros h2 {
     color: #685399; }
   .cover.servicios {
-    background: url(images/cover-servicios.jpg) no-repeat center;
-    min-height: 550px;
-    background-attachment: fixed;
-    background-size: cover; }
+    background-image: url(images/cover-servicios.jpg); }
+  .cover.quienes-somos {
+    background-image: url(images/cover-quienes-somos.jpg); }
 
 .content {
   background: #e6e7e8;
@@ -619,29 +622,29 @@ a {
     .content p span {
       width: 100%;
       display: inline-block; }
-  .content.servicios {
+  .content.servicios, .content.quienes-somos {
     background: #e6e7e8;
     position: absolute;
-    top: 80%;
+    top: 100%;
     width: 100%;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease; }
-    .content.servicios ul {
-      list-style-type: lower-latin;
-      margin-left: 15px; }
-      .content.servicios ul li {
-        line-height: 25px; }
-      .content.servicios ul ul {
-        list-style-type: lower-roman;
+  .content.servicios ul {
+    list-style-type: lower-latin;
+    margin-left: 15px; }
+    .content.servicios ul li {
+      line-height: 25px; }
+    .content.servicios ul ul {
+      list-style-type: lower-roman;
+      margin-left: 45px;
+      margin-bottom: 20px; }
+      .content.servicios ul ul ul {
+        list-style-type: decimal;
         margin-left: 45px;
-        margin-bottom: 20px; }
-        .content.servicios ul ul ul {
-          list-style-type: decimal;
-          margin-left: 45px;
-          margin-bottom: 0; }
+        margin-bottom: 0; }
   .content.clientes .logos {
     display: flex;
     align-items: baseline;

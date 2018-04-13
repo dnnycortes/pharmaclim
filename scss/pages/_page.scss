@@ -2,9 +2,13 @@
 
 .cover{
 	position: relative;
-	min-height: 450px;
+	min-height: 700px;
 	overflow: hidden;
 	text-align: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	.btn-scroll{
 		margin-top: 30px;
 	}
@@ -26,10 +30,10 @@
 		}
 	}
 	&.servicios{
-		background: url(images/cover-servicios.jpg) no-repeat center;
-		min-height:							700px;
-		background-attachment:				fixed;
-		background-size:					cover;
+		background-image: url(images/cover-servicios.jpg);
+	}
+	&.quienes-somos{
+		background-image: url(images/cover-quienes-somos.jpg);
 	}
 }
 
@@ -55,18 +59,18 @@
 			display: inline-block;
 		}
 	}
-	&.servicios{
+	&.servicios, &.quienes-somos{
 		background: #e6e7e8;
-		//background: rgba(230, 231, 232, 0.8);
 		position: absolute;
 		top: 100%;
 		width: 100%;
 		-webkit-transition:all 1s ease;
-       	-moz-transition:all 1s ease;
-        -ms-transition:all 1s ease;
-        -o-transition:all 1s ease;
+		-moz-transition:all 1s ease;
+		-ms-transition:all 1s ease;
+		-o-transition:all 1s ease;
 		transition:all 1s ease;
-		
+	}
+	&.servicios{		
 		ul{
 			list-style-type: lower-latin;
 			margin-left: 15px;

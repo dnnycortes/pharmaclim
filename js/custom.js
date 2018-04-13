@@ -41,7 +41,7 @@ $(document).ready(function(){
 	 * Adding animation to content when scrolling
 	 */
 	$(window).scroll(function() {
-        if ($(document).scrollTop() > 100) {
+        if ( $(document).scrollTop() > 100 ){
             $('.content.servicios').css({
 				top: '50%'
 			});
@@ -50,7 +50,17 @@ $(document).ready(function(){
            $('.content.servicios').css({
 				top: '100%'
 		   });
-        }
+		}
+		
+		if( $(document).scrollTop() > 100 ){
+			$('.content.quienes-somos').css({
+				top: '50%'
+			});
+		} else {
+			$('.content.quienes-somos').css({
+				top: '100%'
+			});
+		}
     });
 
 
