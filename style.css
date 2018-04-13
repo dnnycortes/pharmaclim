@@ -659,6 +659,7 @@ a {
     justify-content: space-between;
     flex-wrap: wrap; }
     .content.clientes .logos img {
+      width: 24%;
       margin-bottom: 45px; }
   .content.contacto .contact-form {
     text-align: center; }
