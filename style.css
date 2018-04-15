@@ -667,5 +667,15 @@ a {
       padding: 0 16px;
       border-radius: 6px;
       border: 0; }
+  .content.noticias {
+    overflow: hidden; }
+    .content.noticias .posts, .content.noticias .articles {
+      width: 50%;
+      float: left; }
+    .content.noticias ul li {
+      font-size: 16px;
+      margin-bottom: 25px; }
+      .content.noticias ul li a {
+        color: #685399; }
 
 /*# sourceMappingURL=style.css.map */

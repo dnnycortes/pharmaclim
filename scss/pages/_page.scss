@@ -136,4 +136,20 @@
 			}
 		}
 	}
+	&.noticias{
+		overflow: hidden;
+		.posts, .articles{
+			width: 50%;
+			float: left;
+		}
+		ul{
+			li{
+				font-size: 16px;
+				margin-bottom: 25px;
+				a{
+					color: #685399;
+				}
+			}
+		}
+	}
 }
