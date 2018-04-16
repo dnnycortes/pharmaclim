@@ -15,13 +15,21 @@ get_header(); ?>
 		</div>
 	</div>
 	<div class="content noticias">
-		<div class="main-width" style="height:300px;">
+		<div class="main-width">
 			<div class="posts">
 				<h2>Posts</h2>
 				<ul>
 					<!--EMPIEZA EL LOOP-->
 					<?php query_posts('category_name=posts'); while(have_posts()) : the_post(); ?>
-						<li><a href="javascript:void(0);"> · <?php the_title(); ?> </a></li>
+						<li>
+							<a href="javascript:void(0);" class="post-title"> · <?php the_title(); ?> </a>
+							<div class="post-opened">
+								<div class="img">
+									<a class="btn-close">close</a>
+									<?php the_content(); ?>
+								</div>
+							</div>
+						</li>
 					<?php endwhile; ?>
 					<!--TERMINA EL LOOP-->
 				</ul>

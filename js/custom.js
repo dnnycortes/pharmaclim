@@ -38,6 +38,28 @@ $(document).ready(function(){
 	 });
 
 	/**
+	 * Open 'post' image in a overlay
+	 */
+	$('.posts ul li').each( function(){
+		var _this = this;
+		$(_this).find('.post-title').click( function(){
+			$(_this).find('.post-opened').css({
+				display: 'block'
+			});
+
+		});
+	});
+
+	/**
+	 * Close 'post' image
+	 */
+	$('.post-opened .btn-close').click( function(){
+		$('.post-opened').css({
+			display: 'none'
+		})
+	});
+
+	/**
 	 * Adding animation to content when scrolling
 	 */
 	$(window).scroll(function() {

@@ -382,10 +382,10 @@ a {
   text-transform: uppercase;
   background: url(images/icon-close.png) no-repeat;
   background-position: 100% 50%;
-  background-size: 26% auto;
+  background-size: 100% auto;
   display: inline-block;
-  line-height: 30px;
-  padding-right: 30px; }
+  width: 22px;
+  height: 22px; }
   .btn-close:hover {
     color: #FFF; }
 
@@ -618,7 +618,7 @@ a {
     .content p span {
       width: 100%;
       display: inline-block; }
-  .content.servicios, .content.quienes-somos, .content.nosotros, .content.clientes, .content.contacto, .content.noticias {
+  .content.servicios, .content.quienes-somos, .content.nosotros, .content.clientes, .content.contacto {
     background: #e6e7e8;
     position: absolute;
     top: 100%;
@@ -667,15 +667,41 @@ a {
       padding: 0 16px;
       border-radius: 6px;
       border: 0; }
-  .content.noticias {
+  .content.noticias .main-width {
     overflow: hidden; }
-    .content.noticias .posts, .content.noticias .articles {
-      width: 50%;
-      float: left; }
-    .content.noticias ul li {
-      font-size: 16px;
-      margin-bottom: 25px; }
-      .content.noticias ul li a {
-        color: #685399; }
+  .content.noticias .posts, .content.noticias .articles {
+    width: 50%;
+    float: left; }
+  .content.noticias ul li {
+    font-size: 16px;
+    margin-bottom: 25px; }
+    .content.noticias ul li a {
+      color: #685399; }
+
+.post-opened {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  text-align: center;
+  padding: 30px 0 0 0;
+  display: none; }
+  .post-opened .img {
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px; }
+    .post-opened .img .btn-close {
+      text-align: right;
+      float: right;
+      text-indent: 9999999px;
+      cursor: pointer; }
+    .post-opened .img img {
+      margin-top: 15px;
+      width: 100%;
+      height: auto; }
 
 /*# sourceMappingURL=style.css.map */
