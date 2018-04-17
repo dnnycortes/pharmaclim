@@ -65,8 +65,8 @@
 		</h1>
 		<a href="javascript:void(0);" class="menu-toggle"> Menu </a>
 		<div class="social-icons">
-			<a href="javascript:void(0);" class="social facebook">facebook</a>
-			<a href="javascript:void(0);" class="social instagram">instagram</a>
+			<a href="https://www.facebook.com/pharmaclims/" target="_blank" class="social facebook">facebook</a>
+			<a href="https://www.linkedin.com/company/pharma-clim-services-s.a-de-c.v/" target="_blank" class="social instagram">instagram</a>
 		</div>
 	</div>
 </header>

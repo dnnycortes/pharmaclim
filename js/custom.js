@@ -59,10 +59,47 @@ $(document).ready(function(){
 		})
 	});
 
+	$('.slide.one .desc').css({
+		top: '20%'
+	});
+
 	/**
 	 * Adding animation to content when scrolling
 	 */
 	$(window).scroll(function() {
+		// Home slide after 5px scroll
+		if ( $(document).scrollTop() > 5 ){
+            $('.slide.one .slide-info').css({
+				bottom: '30%',
+				opacity: 1
+			});
+			$('.slide.one .desc').css({
+				top: '40%'
+			});
+        } else {
+			$('.slide.one .slide-info').css({
+				bottom: '-15%',
+				opacity: 0
+			});
+			$('.slide.one .desc').css({
+				top: '20%'
+			});
+		}
+
+		// Home animation to content when scrolling
+
+		if( $(document).scrollTop() > 650 ){
+			$('.slide.two .slide-info').css({
+				bottom: '20%',
+				opacity: 1
+			});
+		} else {
+			$('.slide.two .slide-info').css({
+				bottom: '0',
+				opacity: 0
+			});
+		}
+
         if ( $(document).scrollTop() > 100 ){
             $('.content.servicios').css({
 				top: '50%'
@@ -123,7 +160,20 @@ $(document).ready(function(){
 				top: '100%'
 			});
 		}
-    });
+	});
+	
+	/**
+	 * Moving background image while mousemove on intern views
+	 */
+	var pixelToMove = 30;
+
+	$('.cover.servicios, .cover.quienes-somos, .cover.nosotros, .cover.clientes, .cover.contacto, .cover.noticias, .slide.one, .slide.two').mousemove( function(e){
+		var width = $(this).innerWidth();
+		var height = $(this).innerHeight();
+		var newValueX = (e.pageX / width) * pixelToMove;
+		var newValueY = (e.pageY / height) * pixelToMove;
+		$(this).css('background-position', newValueX + '%' + ' ' + newValueY + '%');
+	});
 
 
 
