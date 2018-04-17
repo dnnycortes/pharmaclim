@@ -8,9 +8,21 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 110% auto;
+	//background-size: 110% auto;
 	&.one{
 		background-image: url(images/home1.jpg);
+		.btn-scroll{
+			position: absolute;
+			top: 25%;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			-webkit-transition:all .8s ease;
+			-moz-transition:all .8s ease;
+			-ms-transition:all .8s ease;
+			-o-transition:all .8s ease;
+			transition:all .8s ease;
+		}
 		.slide-info{
 			bottom: -15%;
 			opacity: 0;
@@ -19,7 +31,7 @@
 			position: absolute;
 			color: #675399;
 			top: 0%;
-			font-size: 20px;
+			font-size: 25px;
 			left: 25%;
 			-webkit-transition:all .8s ease;
 			-moz-transition:all .8s ease;

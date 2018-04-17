@@ -349,11 +349,24 @@ a {
 
 .main-footer {
   background: #685399;
-  min-height: 120px; }
+  min-height: 120px;
+  color: #FFFFFF; }
   .main-footer .main-width {
     background: url(images/pharmaclim-logo-footer.png) no-repeat;
     background-size: auto 100%;
-    min-height: 120px; }
+    min-height: 120px;
+    padding: 20px 0; }
+    .main-footer .main-width .quote {
+      float: right;
+      padding-top: 20px;
+      overflow: hidden; }
+      .main-footer .main-width .quote p {
+        font-size: 26px;
+        font-weight: lighter;
+        margin-bottom: 15px; }
+      .main-footer .main-width .quote span {
+        float: right;
+        font-size: 18px; }
 
 .sec-footer {
   background: #000000;
@@ -400,10 +413,20 @@ a {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 110% auto; }
+  background-position: center; }
   .slide.one {
     background-image: url(images/home1.jpg); }
+    .slide.one .btn-scroll {
+      position: absolute;
+      top: 25%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      -webkit-transition: all .8s ease;
+      -moz-transition: all .8s ease;
+      -ms-transition: all .8s ease;
+      -o-transition: all .8s ease;
+      transition: all .8s ease; }
     .slide.one .slide-info {
       bottom: -15%;
       opacity: 0; }
@@ -411,7 +434,7 @@ a {
       position: absolute;
       color: #675399;
       top: 0%;
-      font-size: 20px;
+      font-size: 25px;
       left: 25%;
       -webkit-transition: all .8s ease;
       -moz-transition: all .8s ease;

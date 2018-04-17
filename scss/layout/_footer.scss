@@ -3,10 +3,26 @@
 .main-footer{
 	background:				#685399;
 	min-height: 			120px;
+	color: #FFFFFF;
 	.main-width{
 		background: url(images/pharmaclim-logo-footer.png) no-repeat;
 		background-size: auto 100%;
 		min-height: 			120px;
+		padding: 20px 0;
+		.quote{
+			float: right;
+			padding-top: 20px;
+			overflow: hidden;
+			p{
+				font-size: 26px;
+				font-weight: lighter;
+				margin-bottom: 15px;
+			}
+			span{
+				float: right;
+				font-size: 18px;
+			}
+		}
 	}
 }
 

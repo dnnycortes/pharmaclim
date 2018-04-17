@@ -7,6 +7,7 @@ get_header(); ?>
 <!-- Escupe la ruta hacia la carpeta raiz del templete <?php echo get_template_directory_uri(); ?> -->
 
 <div class="slide one">
+	<a href="javascript:void(0);" class="btn-scroll">Scroll</a>
 	<p class="desc">Somos expertos en consultoría sobre Asuntos Regulatorios <br> y de cumplimiento de BPF para la industria:</p>
 	<div class="slide-info">
 		<div class="main-width">
