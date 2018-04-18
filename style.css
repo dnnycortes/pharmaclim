@@ -363,7 +363,8 @@ a {
       .main-footer .main-width .quote p {
         font-size: 26px;
         font-weight: lighter;
-        margin-bottom: 15px; }
+        margin-bottom: 15px;
+        line-height: 32px; }
       .main-footer .main-width .quote span {
         float: right;
         font-size: 18px; }
@@ -628,15 +629,15 @@ a {
 
 .cover {
   position: relative;
-  min-height: 700px;
+  min-height: 800px;
   overflow: hidden;
   text-align: center;
   background-attachment: fixed;
-  background-size: 110% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 130px; }
   .cover .btn-scroll {
-    margin-top: 30px; }
+    margin-top: 100px; }
   .cover img {
     position: absolute; }
   .cover h2 {
@@ -653,7 +654,14 @@ a {
   .cover.nosotros {
     background-image: url(images/cover-por-que-nosotros.jpg); }
     .cover.nosotros h2 {
-      color: #685399; }
+      color: #685399;
+      margin-top: -100px;
+      opacity: 0;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease; }
   .cover.clientes {
     background-image: url(images/cover-clientes.jpg); }
   .cover.contacto {
@@ -662,7 +670,7 @@ a {
     background-image: url(images/cover-noticias.jpg); }
 
 .content {
-  background: #e6e7e8;
+  background: rgba(230, 231, 232, 0.7);
   padding: 20px 0 0 0;
   color: #685399; }
   .content .main-width {
@@ -679,7 +687,7 @@ a {
       width: 100%;
       display: inline-block; }
   .content.servicios, .content.quienes-somos, .content.nosotros, .content.clientes, .content.contacto {
-    background: #e6e7e8;
+    background: rgba(230, 231, 232, 0.7);
     position: absolute;
     top: 100%;
     width: 100%;
@@ -689,18 +697,27 @@ a {
     -o-transition: all 1s ease;
     transition: all 1s ease; }
   .content.servicios ul {
-    list-style-type: lower-latin;
-    margin-left: 15px; }
+    list-style-type: decimal;
+    margin-left: 100px;
+    font-size: 17px; }
     .content.servicios ul li {
-      line-height: 25px; }
+      line-height: 27px; }
     .content.servicios ul ul {
-      list-style-type: lower-roman;
+      list-style-type: none;
       margin-left: 45px;
       margin-bottom: 20px; }
       .content.servicios ul ul ul {
-        list-style-type: decimal;
-        margin-left: 45px;
+        list-style-type: lower-alpha;
+        margin-left: 60px;
         margin-bottom: 0; }
+  .content.quienes-somos h2 {
+    font-size: 28px; }
+  .content.quienes-somos p {
+    font-size: 17px; }
+  .content.nosotros .main-width {
+    max-width: 800px; }
+  .content.nosotros p {
+    font-size: 17px; }
   .content.clientes .logos {
     display: flex;
     align-items: baseline;

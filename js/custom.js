@@ -1,29 +1,23 @@
 $(document).ready(function(){
-
-	var owl = $('.owl-carousel');
 	/**
-	 * Owl Carousel object configuration
+	 * Navegación por medio de id's con animación
 	 */
-	owl.owlCarousel({
-		items: 1,
-		dots: true,
-		autoplayHoverPause: true,
-		animateOut: 'bounceOutUp',
-		animateIn: 'bounceInUp',
-		mouseDrag: false
-	});
+	$('a[href*=\\#]:not([href=\\#])').click(function() {
+		$('a').removeClass('selected');
+		$(this).addClass('selected');
+    	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+       		|| location.hostname == this.hostname) {
 
-	/**
-	 * Owl Carousel event when using the mousewheel
-	 */
-	/*owl.on('mousewheel', '.owl-stage', function(e){
-		if (e.deltaY>0) {
-			owl.trigger('next.owl');
-		} else {
-			owl.trigger('prev.owl');
+      	var target = $(this.hash);
+      	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      	if (target.length) {
+       		$('html,body').animate({
+       		scrollTop: target.offset().top -750
+       		}, 2000);
+       		return false;
+    		}
 		}
-		e.preventDefault();
-	});*/
+  	});
 
 
 	/**
@@ -75,6 +69,14 @@ $(document).ready(function(){
 		$('html, body').animate({
 			scrollTop: $('.slide.one .desc').offset().top -20
 		}, 2000);
+	});
+
+	/**
+	 * Por qué nosotros effects
+	 */
+	$('.cover.nosotros h2').css({
+		'margin-top': '30px',
+		opacity: 1
 	});
 
 	/**
@@ -141,9 +143,10 @@ $(document).ready(function(){
 			});
 		}
 
-		if( $(document).scrollTop() > 100 ){
+		// Animate when scrolling - por qué nosotros
+		if( $(document).scrollTop() > 80 ){
 			$('.content.nosotros').css({
-				top: '50%'
+				top: '36%'
 			});
 		} else {
 			$('.content.nosotros').css({

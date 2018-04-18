@@ -2,16 +2,16 @@
 
 .cover{
 	position: relative;
-	min-height: 700px;
+	min-height: 800px;
 	overflow: hidden;
 	text-align: center;
 	background-attachment: fixed;
-	background-size: 110% auto;
+	background-size: cover; //110% auto;
 	background-repeat: no-repeat;
 	//background-position: center;
 	padding-top: 130px;
 	.btn-scroll{
-		margin-top: 30px;
+		margin-top: 100px;
 	}
 	img{
 		position: absolute;
@@ -35,6 +35,13 @@
 		background-image: url(images/cover-por-que-nosotros.jpg);
 		h2{
 			color: #685399;
+			margin-top: -100px;
+			opacity: 0;
+			-webkit-transition:all 1s ease;
+			-moz-transition:all 1s ease;
+			-ms-transition:all 1s ease;
+			-o-transition:all 1s ease;
+			transition:all 1s ease;
 		}
 	}
 	&.clientes{
@@ -50,7 +57,7 @@
 
 
 .content{
-	background: #e6e7e8;
+	background: rgba(230, 231, 232, 0.7);
 	padding: 20px 0 0 0;
 	color: #685399;
 	.main-width{
@@ -71,7 +78,7 @@
 		}
 	}
 	&.servicios, &.quienes-somos, &.nosotros, &.clientes, &.contacto{
-		background: #e6e7e8;
+		background: rgba(230, 231, 232, 0.7);
 		position: absolute;
 		top: 100%;
 		width: 100%;
@@ -83,21 +90,38 @@
 	}
 	&.servicios{		
 		ul{
-			list-style-type: lower-latin;
-			margin-left: 15px;
+			list-style-type: decimal;
+			margin-left: 100px;
+			font-size: 17px;
 			li{
-				line-height: 25px;
+				line-height: 27px;
 			}
 			ul{
-				list-style-type: lower-roman;
+				list-style-type: none;
 				margin-left: 45px;
 				margin-bottom: 20px;
 				ul{
-					list-style-type: decimal;
-					margin-left: 45px;
+					list-style-type: lower-alpha;
+					margin-left: 60px;
 					margin-bottom: 0;
 				}
 			}
+		}
+	}
+	&.quienes-somos{
+		h2{
+			font-size: 28px;
+		}
+		p{
+			font-size: 17px;
+		}
+	}
+	&.nosotros{
+		.main-width{
+			max-width: 800px;
+		}
+		p{
+			font-size: 17px;
 		}
 	}
 	&.clientes{
