@@ -655,7 +655,8 @@ a {
   .cover .main-width {
     padding: 20px 0; }
   .cover.servicios {
-    background-image: url(images/cover-servicios.jpg); }
+    background-image: url(images/cover-servicios.jpg);
+    min-height: 1250px; }
   .cover.quienes-somos {
     background-image: url(images/cover-quienes-somos.jpg);
     min-height: 818px; }
@@ -664,11 +665,13 @@ a {
     .cover.nosotros h2 {
       color: #685399; }
   .cover.clientes {
-    background-image: url(images/cover-clientes.jpg); }
+    background-image: url(images/cover-clientes.jpg);
+    min-height: 1250px; }
   .cover.contacto {
     background-image: url(images/cover-contacto.jpg); }
   .cover.noticias {
-    background-image: url(images/cover-noticias.jpg); }
+    background-image: url(images/cover-noticias.jpg);
+    min-height: 650px; }
     .cover.noticias h2 {
       color: #685399; }
 
@@ -729,6 +732,8 @@ a {
     .content.clientes .logos img {
       width: 24%;
       margin-bottom: 45px; }
+  .content.contacto p {
+    color: #FFFFFF; }
   .content.contacto .contact-form {
     text-align: center; }
     .content.contacto .contact-form input[type="text"], .content.contacto .contact-form input[type="email"] {

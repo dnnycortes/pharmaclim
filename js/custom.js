@@ -8,12 +8,33 @@ $(document).ready(function(){
     	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
        		|| location.hostname == this.hostname) {
 
-      	var target = $(this.hash);
-      	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		var target = $(this.hash);
+		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       	if (target.length) {
        		$('html,body').animate({
-       		scrollTop: target.offset().top -750
-       		}, 2000);
+       		scrollTop: 200
+       		}, 1500);
+       		return false;
+    		}
+		}
+	});
+	  
+
+	/**
+	 * Navegación por medio de id's con animación en sección noticias
+	 */
+	$('.cover.noticias a[href*=\\#]:not([href=\\#])').click(function() {
+		$('a').removeClass('selected');
+		$(this).addClass('selected');
+    	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+       		|| location.hostname == this.hostname) {
+
+		var target = $(this.hash);
+		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      	if (target.length) {
+       		$('html,body').animate({
+       		scrollTop: target.offset().top
+       		}, 1000);
        		return false;
     		}
 		}
@@ -124,7 +145,7 @@ $(document).ready(function(){
 
         if ( $(document).scrollTop() > 100 ){
             $('.content.servicios').css({
-				top: '50%'
+				top: '30%'
 			});
         }
         else {
@@ -156,7 +177,7 @@ $(document).ready(function(){
 
 		if( $(document).scrollTop() > 100 ){
 			$('.content.clientes').css({
-				top: '50%'
+				top: '35%'
 			});
 		} else {
 			$('.content.clientes').css({

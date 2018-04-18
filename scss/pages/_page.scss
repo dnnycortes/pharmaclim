@@ -34,6 +34,7 @@
 	}
 	&.servicios{
 		background-image: url(images/cover-servicios.jpg);
+		min-height: 1250px;
 	}
 	&.quienes-somos{
 		background-image: url(images/cover-quienes-somos.jpg);
@@ -47,12 +48,14 @@
 	}
 	&.clientes{
 		background-image: url(images/cover-clientes.jpg);
+		min-height: 1250px;
 	}
 	&.contacto{
 		background-image: url(images/cover-contacto.jpg);
 	}
 	&.noticias{
 		background-image: url(images/cover-noticias.jpg);
+		min-height: 650px;
 		h2{
 			color: #685399;
 		}
@@ -141,6 +144,9 @@
 		}
 	}
 	&.contacto{
+		p{
+			color: #FFFFFF;
+		}
 		.contact-form{
 			text-align: center;
 			input[type="text"], input[type="email"]{

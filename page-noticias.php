@@ -11,10 +11,10 @@ get_header(); ?>
 	<div class="cover noticias">
 		<div class="main-width">
 			<h2>Noticias</h2>
-			<a href="javascript:void(0);" class="btn-scroll">Scroll</a>
+			<a href="#noticias" class="btn-scroll">Scroll</a>
 		</div>
 	</div>
-	<div class="content noticias">
+	<div class="content noticias" id="noticias">
 		<div class="main-width">
 			<div class="posts">
 				<h2>Posts</h2>

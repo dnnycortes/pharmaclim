@@ -11,10 +11,10 @@ get_header(); ?>
 	<div class="cover contacto">
 		<div class="main-width">
 			<h2>Contacto</h2>
-			<a href="javascript:void(0);" class="btn-scroll">Scroll</a>
+			<a href="#contacto" class="btn-scroll">Scroll</a>
 		</div>
 	</div>
-	<div class="content contacto">
+	<div class="content contacto" id="contacto">
 		<div class="main-width">
 			<!--EMPIEZA EL LOOP-->
 			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>

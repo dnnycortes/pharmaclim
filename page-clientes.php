@@ -11,10 +11,10 @@ get_header(); ?>
 	<div class="cover clientes">
 		<div class="main-width">
 			<h2>Clientes</h2>
-			<a href="javascript:void(0);" class="btn-scroll">Scroll</a>
+			<a href="#clientes" class="btn-scroll">Scroll</a>
 		</div>
 	</div>
-	<div class="content clientes">
+	<div class="content clientes" id="clientes">
 		<div class="main-width">
 			<h2>Clientes</h2>
 			<p>Atendemos a clientes nacionales e internacionales de las industrias mencionadas.</p>
