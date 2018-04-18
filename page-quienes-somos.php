@@ -11,10 +11,10 @@ get_header(); ?>
 	<div class="cover quienes-somos">
 		<div class="main-width">
 			<h2>Quiénes somos</h2>
-			<a href="javascript:void(0);" class="btn-scroll">Scroll</a>
+			<a href="#quienes-somos" class="btn-scroll">Scroll</a>
 		</div>
 	</div>
-	<div class="content quienes-somos">
+	<div class="content quienes-somos" id="quienes-somos">
 		<div class="main-width">
 			<h2>Misión</h2>
 			<p>

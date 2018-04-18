@@ -72,9 +72,9 @@ $(document).ready(function(){
 	});
 
 	/**
-	 * Por qué nosotros effects
+	 * Function to add a slide effect on h2 titles on intern views
 	 */
-	$('.cover.nosotros h2').css({
+	$('.cover h2').css({
 		'margin-top': '30px',
 		opacity: 1
 	});
@@ -135,7 +135,7 @@ $(document).ready(function(){
 		
 		if( $(document).scrollTop() > 100 ){
 			$('.content.quienes-somos').css({
-				top: '50%'
+				top: '40%'
 			});
 		} else {
 			$('.content.quienes-somos').css({

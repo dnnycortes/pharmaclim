@@ -644,30 +644,33 @@ a {
     position: absolute;
     color: #FFFFFF;
     font-weight: lighter;
-    font-size: 35px; }
+    font-size: 45px;
+    margin-top: -100px;
+    opacity: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
   .cover .main-width {
     padding: 20px 0; }
   .cover.servicios {
     background-image: url(images/cover-servicios.jpg); }
   .cover.quienes-somos {
-    background-image: url(images/cover-quienes-somos.jpg); }
+    background-image: url(images/cover-quienes-somos.jpg);
+    min-height: 818px; }
   .cover.nosotros {
     background-image: url(images/cover-por-que-nosotros.jpg); }
     .cover.nosotros h2 {
-      color: #685399;
-      margin-top: -100px;
-      opacity: 0;
-      -webkit-transition: all 1s ease;
-      -moz-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-      -o-transition: all 1s ease;
-      transition: all 1s ease; }
+      color: #685399; }
   .cover.clientes {
     background-image: url(images/cover-clientes.jpg); }
   .cover.contacto {
     background-image: url(images/cover-contacto.jpg); }
   .cover.noticias {
     background-image: url(images/cover-noticias.jpg); }
+    .cover.noticias h2 {
+      color: #685399; }
 
 .content {
   background: rgba(230, 231, 232, 0.7);

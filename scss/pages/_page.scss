@@ -20,7 +20,14 @@
 		position: absolute;
 		color: #FFFFFF;
 		font-weight: lighter;
-		font-size: 35px;
+		font-size: 45px;
+		margin-top: -100px;
+		opacity: 0;
+		-webkit-transition:all 1s ease;
+		-moz-transition:all 1s ease;
+		-ms-transition:all 1s ease;
+		-o-transition:all 1s ease;
+		transition:all 1s ease;
 	}
 	.main-width{
 		padding: 20px 0;
@@ -30,18 +37,12 @@
 	}
 	&.quienes-somos{
 		background-image: url(images/cover-quienes-somos.jpg);
+		min-height: 818px;
 	}
 	&.nosotros{
 		background-image: url(images/cover-por-que-nosotros.jpg);
 		h2{
 			color: #685399;
-			margin-top: -100px;
-			opacity: 0;
-			-webkit-transition:all 1s ease;
-			-moz-transition:all 1s ease;
-			-ms-transition:all 1s ease;
-			-o-transition:all 1s ease;
-			transition:all 1s ease;
 		}
 	}
 	&.clientes{
@@ -52,6 +53,9 @@
 	}
 	&.noticias{
 		background-image: url(images/cover-noticias.jpg);
+		h2{
+			color: #685399;
+		}
 	}
 }
 
