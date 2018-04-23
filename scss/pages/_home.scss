@@ -1,172 +1,159 @@
 // Home
 
-.main-slider{
-	h2{
-		position:			absolute;
-		color:				$main-color;
-		font-size: 			40px;
-		left: 				12%;
-		top:				135px;
-		text-transform:		uppercase;
-		z-index: 			90;
-		font-weight: 		normal;
+.wrapper {
+	position: relative;
+}
+
+.slide {
+	height: 800px;
+    width: 100%;
+	padding-top: 120px;
+	position: relative;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	&.one {
+		background-image: url(images/home1.jpg);
 	}
-	.btn-scroll{
-		position:			absolute;
-		bottom: 			30px;
-		left: 				50%;
-		z-index: 			90;
+
+	&.two {
+		background-image: url(images/home2.jpg);
+	}
+
+	.overlay {
+		background: rgba(0, 0, 0, 0.4);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 0;
+	}
+
+	.btn-scroll {
+		position: absolute; 
+		top: 140px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
 	}
 }
 
-.home-products{
-	min-height:							500px;
-	overflow:							hidden;
-	background:							#1d1812;
-	position: 							relative;
-	.productos-menu{
-		position:						absolute;
-		top:							100px;
-		left:							15%;
-		z-index:						2;
-		.menu-productos-container, .menu-menu-productos-container{
-			color:						$main-color;
-			text-transform: 			uppercase;
-			margin-left:				45px;
-			ul{
-				li{
-					margin-bottom:		5px;
-					a{
-						color:			$main-color;
-						font-size:      20px;
-					}
+.slide.one {
+	text-align: center;
+
+	> p {
+		color: white;
+		z-index: 1;
+		position: absolute;
+		left: 0;
+		right: 0;
+		font-size: 29px;
+		margin: 0 auto;
+		width: 58%;
+		top: 50px;
+		opacity: 0;
+		@include transition(1s);
+	}
+
+	ul {
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		background: rgba(103, 83, 153, 0.7);
+		padding: $padding * 2 $padding;
+		bottom: 0%;
+		opacity: 0;
+		@include transition(1s);
+
+		li {
+			color: white;
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+}
+
+.slide.two {
+	text-align: left;
+
+	> p {
+		color: white;
+		z-index: 1;
+		position: absolute;
+		left: 0;
+		right: 0;
+		font-size: 29px;
+		margin: 0 auto;
+		width: 58%;
+		top: 250px;
+		opacity: 1;
+		@include transition(1s);
+	}
+
+	ul {
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		background: rgba(103, 83, 153, 0.7);
+		bottom: -50%;
+		opacity: 0;
+		padding: 20px 100px 20px 300px;
+		@include transition(1s);
+
+		li {
+			color: white;
+			font-size: 20px;
+			line-height: 30px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.slide-menu {
+	position: fixed; 
+	top: 50%;
+	left: 20px;
+	z-index: 1;
+
+	li {
+		margin-bottom: 10px;
+
+		a {
+			display: flex; 
+			line-height: 25px;
+			align-items: center;
+			color: white;
+			font-size: 17px;
+			@include transition(.5s);
+			
+			span {
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				display: inline-block;
+				background: white;
+				margin-right: 6px;
+			}
+
+			&.active {
+				color: #b194f8;
+				font-size: 19px;
+				span {
+					background: #b194f8;
 				}
 			}
-		}
-	}
-	h2{
-		font-size: 						34px;
-		text-transform: 				uppercase;
-		color:							$main-color;
-		font-weight: 					normal;
-	}
-	.product{
-		width: 							33.33%;
-		float: 							left;
-		position:						relative;
-		overflow: 						hidden;
-		img{
-			width: 						100%;
-			-webkit-transition: 		all 1s ease;
-			transition: 				all 1s ease;
-			margin-bottom: 				0;
-		}
-		h3{
-			position:					absolute;
-			z-index: 					1;
-			top: 						125px;
-			left:						15%;
-			font-size: 					24px;
-			color:						$main-color;
-			text-transform: 			uppercase;
-			font-weight: 				normal;
-		}
-		&.tapiceria{
-			h3{
-				left: 					36%;
+
+			&:hover {
+				color: #b194f8;
+				span {
+					background: #b194f8;
+				}
 			}
-		}
-	}
-	.product:hover img{
-		-webkit-transform: 				scale(1.1);
-		transform: 						scale(1.1);
-	}
-}
-
-.home-pasion{
-	background:							url(images/fondo-home-pasion.jpg) no-repeat center;
-	min-height:							500px;
-	background-attachment:				fixed;
-	background-size:					cover;
-	padding:							$padding*6 0;
-	h2{
-		font-size: 						34px;
-		text-transform: 				uppercase;
-		color:							$main-color;
-		font-weight: 					normal;
-		margin-bottom: 					$margin*15;
-	}
-	p{
-		color:							$main-color;
-		font-size: 						20px;
-	}
-
-}
-
-
-.home-proyectos{
-	background:							url(images/fondo-home-proyectos.jpg) no-repeat center;
-	min-height:							500px;
-	background-attachment:				fixed;
-	background-size:					cover;
-	padding:							$padding*6 0;
-	h2{
-		font-size: 						34px;
-		text-transform: 				uppercase;
-		color:							$main-color;
-		font-weight: 					normal;
-		margin-bottom: 					$margin*15;
-	}
-	p{
-		color:							$main-color;
-		font-size: 						20px;
-	}
-}
-
-
-#contacto{
-	background:							$sec-color;
-	padding:							$padding*6 0;
-	h2{
-		font-size: 						34px;
-		text-transform: 				uppercase;
-		color:							$main-color;
-		font-weight: 					normal;
-	}
-	.fm-form-container.fm-theme1 .fm-form .button-submit{
-		background:						darken($sec-color, 100%) !important;
-		border:							0 !important;
-		@include						border-radius(5px);
-	}
-	.fm-form .wdform-label-section{
-		display:						none;
-	}
-	#contact-form{
-		text-align:						center !important;
-		input.wpcf7-text, textarea.wpcf7-textarea{
-			min-width:					600px;
-			font-family: 				$main-font;
-		}
-		input.wpcf7-text{
-			height: 					25px;
-			padding-left:				10px;
-		}
-		textarea.wpcf7-textarea{
-			padding-top: 				10px;
-			padding-left:				10px;
-			margin-bottom:				10px;
-		}
-		input.wpcf7-submit{
-			background:					darken($sec-color, 100%);
-			border:						0;
-			@include					border-radius(5px);
-			color:						$main-color;
-			line-height: 				30px;
-			font-family: 				$main-font;
-			font-size:					16px;
-		}
-		.wpcf7-mail-sent-ok, .wpcf7-response-output{
-			color: 						$main-color;
 		}
 	}
 }

@@ -74,23 +74,6 @@ $(document).ready(function(){
 		})
 	});
 
-	// Home effects
-	$('.slide.one .desc').css({
-		top: '20%'
-	});
-	$('.slide.one .btn-scroll').css({
-		top: '30%'
-	});
-
-	// Home btn scroll on click
-	$('.slide.one .btn-scroll').click( function(){
-		$('.slide.one .btn-scroll').css({
-			opacity: 0
-		});
-		$('html, body').animate({
-			scrollTop: $('.slide.one .desc').offset().top -20
-		}, 2000);
-	});
 
 	/**
 	 * Function to add a slide effect on h2 titles on intern views
@@ -104,45 +87,6 @@ $(document).ready(function(){
 	 * Adding animation to content when scrolling
 	 */
 	$(window).scroll(function() {
-		// Home slide after 5px scroll
-		if ( $(document).scrollTop() > 5 ){
-            $('.slide.one .slide-info').css({
-				bottom: '30%',
-				opacity: 1
-			});
-			$('.slide.one .desc').css({
-				top: '40%'
-			});
-			$('.slide.one .btn-scroll').css({
-				opacity: 0
-			});
-        } else {
-			$('.slide.one .slide-info').css({
-				bottom: '-15%',
-				opacity: 0
-			});
-			$('.slide.one .desc').css({
-				top: '20%'
-			});
-			$('.slide.one .btn-scroll').css({
-				opacity: 1
-			});
-		}
-
-		// Home animation to content when scrolling
-
-		if( $(document).scrollTop() > 650 ){
-			$('.slide.two .slide-info').css({
-				bottom: '20%',
-				opacity: 1
-			});
-		} else {
-			$('.slide.two .slide-info').css({
-				bottom: '0',
-				opacity: 0
-			});
-		}
-
         if ( $(document).scrollTop() > 100 ){
             $('.content.servicios').css({
 				top: '30%'
@@ -211,7 +155,7 @@ $(document).ready(function(){
 	 */
 	var pixelToMove = 30;
 
-	$('.cover.servicios, .cover.quienes-somos, .cover.nosotros, .cover.clientes, .cover.contacto, .cover.noticias, .slide.one, .slide.two').mousemove( function(e){
+	$('.cover.servicios, .cover.quienes-somos, .cover.nosotros, .cover.clientes, .cover.contacto, .cover.noticias').mousemove( function(e){
 		var width = $(this).innerWidth();
 		var height = $(this).innerHeight();
 		var newValueX = (e.pageX / width) * pixelToMove;
@@ -219,6 +163,91 @@ $(document).ready(function(){
 		$(this).css('background-position', newValueX + '%' + ' ' + newValueY + '%');
 	});
 
+
+
+
+	/**
+	 * Module: Home
+	 * Description: Slide to 1st content on home
+	 */
+	$('.btn-slide-one').click(function() {
+		$('.btn-slide-two').removeClass('active');
+		$(this).addClass('active');
+		$('html, body').animate({
+			scrollTop: $(".slide.one").offset().top
+		}, 2000);
+		return false;
+	});
+	
+	/**
+	 * Module: Home
+	 * Description: Slide to 2nd content on home
+	 */
+	$('.btn-slide-two').click(function() {
+		$('.btn-slide-one').removeClass('active');
+		$(this).addClass('active');
+		$('html, body').animate({
+			scrollTop: $(".slide.two").offset().top
+		}, 2000);
+		return false;
+	});
+
+	/**
+	 * Module: Home
+	 * Description: Animate paragraph content on slide one
+	 */
+	$('.slide.one > p').css({
+		opacity: 1,
+		top: '300px'
+	});
+
+	/**
+	 * Module: Home
+	 * Description: Animate content on slide one when scrolling
+	 */
+	$(window).scroll( function(){
+		if ( $(document).scrollTop() > 20 ){
+			$('.slide.one ul').css({
+				bottom: '30%',
+				opacity: 1
+			});
+		} else {
+			$('.slide.one ul').css({
+				bottom: '0',
+				opacity: 0
+			});
+		}
+	});
+
+	/**
+	 * Module: Home
+	 * Description: Scroll when clicking scroll button on slide one 
+	 */
+	$('.slide.one .btn-scroll').click( function(){
+		$('html, body').animate({
+			scrollTop: 130 
+		}, 1000);
+	});
+
+	$('.slide.two .btn-scroll').click( function(){
+		$('html, body').animate({
+			scrollTop: 1000
+		}, 1000);
+	});
+
+	$(window).scroll( function(){
+		if( $(document).scrollTop() > 950 ){
+			$('.slide.two ul').css({
+				bottom: '0%',
+				opacity: 1
+			});
+		} else {
+			$('.slide.two ul').css({
+				bottom: '-50%',
+				opacity: 0
+			});
+		}
+	});
 
 
 });

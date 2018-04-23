@@ -248,12 +248,12 @@ mark {
 /* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 ::-moz-selection {
   background: #6d6e70;
-  color: #FFF;
+  color: #675399;
   text-shadow: none; }
 
 ::selection {
   background: #6d6e70;
-  color: #FFF;
+  color: #675399;
   text-shadow: none; }
 
 body, html {
@@ -285,7 +285,7 @@ a {
   padding: 10px 0;
   overflow: hidden;
   position: fixed;
-  z-index: 1; }
+  z-index: 2; }
   .main-header .main-width {
     position: relative;
     overflow: hidden; }
@@ -396,7 +396,7 @@ a {
   text-indent: -999999px; }
 
 .btn-close {
-  color: #FFF;
+  color: #675399;
   text-transform: uppercase;
   background: url(images/icon-close.png) no-repeat;
   background-position: 100% 50%;
@@ -405,81 +405,7 @@ a {
   width: 22px;
   height: 22px; }
   .btn-close:hover {
-    color: #FFF; }
-
-.slide {
-  position: relative;
-  min-height: 850px;
-  overflow: hidden;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }
-  .slide.one {
-    background-image: url(images/home1.jpg); }
-    .slide.one .btn-scroll {
-      position: absolute;
-      top: 25%;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      -webkit-transition: all .8s ease;
-      -moz-transition: all .8s ease;
-      -ms-transition: all .8s ease;
-      -o-transition: all .8s ease;
-      transition: all .8s ease; }
-    .slide.one .slide-info {
-      bottom: -15%;
-      opacity: 0; }
-    .slide.one .desc {
-      position: absolute;
-      color: #675399;
-      top: 0%;
-      font-size: 25px;
-      left: 25%;
-      -webkit-transition: all .8s ease;
-      -moz-transition: all .8s ease;
-      -ms-transition: all .8s ease;
-      -o-transition: all .8s ease;
-      transition: all .8s ease; }
-  .slide.two {
-    background-image: url(images/home2.jpg); }
-    .slide.two .slide-info {
-      bottom: 0;
-      opacity: 1; }
-      .slide.two .slide-info p {
-        font-size: 26px; }
-      .slide.two .slide-info ul {
-        font-size: 22px;
-        margin-left: 180px; }
-        .slide.two .slide-info ul li {
-          margin-bottom: 15px; }
-  .slide .slide-info {
-    color: #FFFFFF;
-    background-color: rgba(103, 83, 153, 0.8);
-    position: absolute;
-    width: 100%;
-    padding: 15px 0;
-    -webkit-transition: all .8s ease;
-    -moz-transition: all .8s ease;
-    -ms-transition: all .8s ease;
-    -o-transition: all .8s ease;
-    transition: all .8s ease; }
-    .slide .slide-info h2 {
-      text-transform: uppercase;
-      font-size: 20px;
-      margin-bottom: 10px; }
-    .slide .slide-info p {
-      margin-bottom: 10px;
-      font-size: 20px;
-      margin-left: 70px;
-      font-weight: lighter;
-      margin-bottom: 40px; }
-    .slide .slide-info ul {
-      list-style: disc;
-      margin-left: 200px;
-      font-weight: lighter;
-      font-size: 25px; }
+    color: #675399; }
 
 .divider {
   background: #6d6e70 no-repeat 50% 50%;
@@ -488,144 +414,141 @@ a {
   .divider.home {
     background-image: url(images/divider-home.png); }
 
-.main-slider h2 {
-  position: absolute;
-  color: #FFF;
-  font-size: 40px;
-  left: 12%;
-  top: 135px;
-  text-transform: uppercase;
-  z-index: 90;
-  font-weight: normal; }
-.main-slider .btn-scroll {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  z-index: 90; }
-
-.home-products {
-  min-height: 500px;
-  overflow: hidden;
-  background: #1d1812;
+.wrapper {
   position: relative; }
-  .home-products .productos-menu {
+
+.slide {
+  height: 800px;
+  width: 100%;
+  padding-top: 120px;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .slide.one {
+    background-image: url(images/home1.jpg); }
+  .slide.two {
+    background-image: url(images/home2.jpg); }
+  .slide .overlay {
+    background: rgba(0, 0, 0, 0.4);
     position: absolute;
-    top: 100px;
-    left: 15%;
-    z-index: 2; }
-    .home-products .productos-menu .menu-productos-container, .home-products .productos-menu .menu-menu-productos-container {
-      color: #FFF;
-      text-transform: uppercase;
-      margin-left: 45px; }
-      .home-products .productos-menu .menu-productos-container ul li, .home-products .productos-menu .menu-menu-productos-container ul li {
-        margin-bottom: 5px; }
-        .home-products .productos-menu .menu-productos-container ul li a, .home-products .productos-menu .menu-menu-productos-container ul li a {
-          color: #FFF;
-          font-size: 20px; }
-  .home-products h2 {
-    font-size: 34px;
-    text-transform: uppercase;
-    color: #FFF;
-    font-weight: normal; }
-  .home-products .product {
-    width: 33.33%;
-    float: left;
-    position: relative;
-    overflow: hidden; }
-    .home-products .product img {
-      width: 100%;
-      -webkit-transition: all 1s ease;
-      transition: all 1s ease;
-      margin-bottom: 0; }
-    .home-products .product h3 {
-      position: absolute;
-      z-index: 1;
-      top: 125px;
-      left: 15%;
-      font-size: 24px;
-      color: #FFF;
-      text-transform: uppercase;
-      font-weight: normal; }
-    .home-products .product.tapiceria h3 {
-      left: 36%; }
-  .home-products .product:hover img {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); }
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0; }
+  .slide .btn-scroll {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
 
-.home-pasion {
-  background: url(images/fondo-home-pasion.jpg) no-repeat center;
-  min-height: 500px;
-  background-attachment: fixed;
-  background-size: cover;
-  padding: 60px 0; }
-  .home-pasion h2 {
-    font-size: 34px;
-    text-transform: uppercase;
-    color: #FFF;
-    font-weight: normal;
-    margin-bottom: 150px; }
-  .home-pasion p {
-    color: #FFF;
-    font-size: 20px; }
+.slide.one {
+  text-align: center; }
+  .slide.one > p {
+    color: white;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 29px;
+    margin: 0 auto;
+    width: 58%;
+    top: 50px;
+    opacity: 0;
+    -webkit-transition: all ease-in 1s;
+    -moz-transition: all ease-in 1s;
+    -ms-transition: all ease-in 1s;
+    transition: all ease-in 1s; }
+  .slide.one ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(103, 83, 153, 0.7);
+    padding: 20px 10px;
+    bottom: 0%;
+    opacity: 0;
+    -webkit-transition: all ease-in 1s;
+    -moz-transition: all ease-in 1s;
+    -ms-transition: all ease-in 1s;
+    transition: all ease-in 1s; }
+    .slide.one ul li {
+      color: white;
+      font-size: 20px;
+      line-height: 30px; }
 
-.home-proyectos {
-  background: url(images/fondo-home-proyectos.jpg) no-repeat center;
-  min-height: 500px;
-  background-attachment: fixed;
-  background-size: cover;
-  padding: 60px 0; }
-  .home-proyectos h2 {
-    font-size: 34px;
-    text-transform: uppercase;
-    color: #FFF;
-    font-weight: normal;
-    margin-bottom: 150px; }
-  .home-proyectos p {
-    color: #FFF;
-    font-size: 20px; }
-
-#contacto {
-  background: #6d6e70;
-  padding: 60px 0; }
-  #contacto h2 {
-    font-size: 34px;
-    text-transform: uppercase;
-    color: #FFF;
-    font-weight: normal; }
-  #contacto .fm-form-container.fm-theme1 .fm-form .button-submit {
-    background: black !important;
-    border: 0 !important;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border-radius: 5px; }
-  #contacto .fm-form .wdform-label-section {
-    display: none; }
-  #contacto #contact-form {
-    text-align: center !important; }
-    #contacto #contact-form input.wpcf7-text, #contacto #contact-form textarea.wpcf7-textarea {
-      min-width: 600px;
-      font-family: "Ubuntu", sans-serif; }
-    #contacto #contact-form input.wpcf7-text {
-      height: 25px;
-      padding-left: 10px; }
-    #contacto #contact-form textarea.wpcf7-textarea {
-      padding-top: 10px;
-      padding-left: 10px;
-      margin-bottom: 10px; }
-    #contacto #contact-form input.wpcf7-submit {
-      background: black;
-      border: 0;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      border-radius: 5px;
-      color: #FFF;
+.slide.two {
+  text-align: left; }
+  .slide.two > p {
+    color: white;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 29px;
+    margin: 0 auto;
+    width: 58%;
+    top: 250px;
+    opacity: 1;
+    -webkit-transition: all ease-in 1s;
+    -moz-transition: all ease-in 1s;
+    -ms-transition: all ease-in 1s;
+    transition: all ease-in 1s; }
+  .slide.two ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(103, 83, 153, 0.7);
+    bottom: -50%;
+    opacity: 0;
+    padding: 20px 100px 20px 300px;
+    -webkit-transition: all ease-in 1s;
+    -moz-transition: all ease-in 1s;
+    -ms-transition: all ease-in 1s;
+    transition: all ease-in 1s; }
+    .slide.two ul li {
+      color: white;
+      font-size: 20px;
       line-height: 30px;
-      font-family: "Ubuntu", sans-serif;
-      font-size: 16px; }
-    #contacto #contact-form .wpcf7-mail-sent-ok, #contacto #contact-form .wpcf7-response-output {
-      color: #FFF; }
+      margin-bottom: 20px; }
+
+.slide-menu {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  z-index: 1; }
+  .slide-menu li {
+    margin-bottom: 10px; }
+    .slide-menu li a {
+      display: flex;
+      line-height: 25px;
+      align-items: center;
+      color: white;
+      font-size: 17px;
+      -webkit-transition: all ease-in 0.5s;
+      -moz-transition: all ease-in 0.5s;
+      -ms-transition: all ease-in 0.5s;
+      transition: all ease-in 0.5s; }
+      .slide-menu li a span {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        display: inline-block;
+        background: white;
+        margin-right: 6px; }
+      .slide-menu li a.active {
+        color: #b194f8;
+        font-size: 19px; }
+        .slide-menu li a.active span {
+          background: #b194f8; }
+      .slide-menu li a:hover {
+        color: #b194f8; }
+        .slide-menu li a:hover span {
+          background: #b194f8; }
 
 .cover {
   position: relative;

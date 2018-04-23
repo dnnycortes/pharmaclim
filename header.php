@@ -29,8 +29,8 @@
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	
 	<!-- Iconos para el navegador-->
-	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/icono.ico">
-	<link rel="bookmark" href="<?php echo get_template_directory_uri(); ?>/images/icono.ico">
+	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico">
+	<link rel="bookmark" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico">
 	
 	<!-- Iconos para ipad e iphone -->
 	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/images/icons/apple-touch-icon-57x57-precomposed.png">
