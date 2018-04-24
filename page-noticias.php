@@ -34,16 +34,16 @@ get_header(); ?>
 					<!--TERMINA EL LOOP-->
 				</ul>
 			</div>
-			<!--<div class="articles">
+			<div class="articles">
 				<h2>Artículos</h2>
 				<ul>
 					<!--EMPIEZA EL LOOP-->
-					 <? //php //query_posts('category_name=articulos'); while(have_posts()) : the_post(); ?>
-						<!-- <li><a href="javascript:void(0);">· <? //php the_title(); ?> </a></li> -->
-					<? //php endwhile; ?>
+					 <?php query_posts('category_name=articulos'); while(have_posts()) : the_post(); ?>
+						<li><a href="<?php echo get_post_meta($post->ID, 'pdf', true); ?>" target="_blank">· <?php the_title(); ?> </a></li>
+					<?php endwhile; ?>
 					<!--TERMINA EL LOOP-->
-				<!-- </ul>-->
-			<!--</div>-->
+				</ul>
+			</div>
 		</div><!-- .main-width -->
 		<?php get_footer(); ?>
 	</div><!-- .content -->
