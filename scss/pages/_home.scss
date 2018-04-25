@@ -157,3 +157,28 @@
 		}
 	}
 }
+
+@media screen and (max-width: 680px) {
+	.slide-menu {
+		display: none;
+	}
+	.slide.one {
+		> p {
+			width: 90%;
+			font-size: 22px;
+		}
+	}
+	.slide.two {
+		> p {
+			width: 90%;
+			top: 200px;
+		}
+		ul {
+			padding: 15px;
+			li {
+				font-size: 17px;
+				line-height: 25px;
+			}
+		}
+	}
+}

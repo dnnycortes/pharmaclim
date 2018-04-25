@@ -347,6 +347,11 @@ a {
       .main-menu .menu li a:hover {
         color: #FFFFFF; }
 
+@media screen and (max-width: 680px) {
+  .main-header {
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 94%; } }
 .main-footer {
   background: #685399;
   min-height: 120px;
@@ -373,6 +378,21 @@ a {
   background: #000000;
   min-height: 30px; }
 
+@media screen and (max-width: 680px) {
+  .main-footer {
+    padding: 0 20px; }
+    .main-footer .main-width {
+      background-size: 25%;
+      min-height: 90px; }
+      .main-footer .main-width .quote {
+        width: 65%;
+        padding-top: 0; }
+        .main-footer .main-width .quote p {
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 0; }
+          .main-footer .main-width .quote p br {
+            display: none; } }
 .social {
   margin-bottom: 10px; }
   .social a {
@@ -550,6 +570,22 @@ a {
         .slide-menu li a:hover span {
           background: #b194f8; }
 
+@media screen and (max-width: 680px) {
+  .slide-menu {
+    display: none; }
+
+  .slide.one > p {
+    width: 90%;
+    font-size: 22px; }
+
+  .slide.two > p {
+    width: 90%;
+    top: 200px; }
+  .slide.two ul {
+    padding: 15px; }
+    .slide.two ul li {
+      font-size: 17px;
+      line-height: 25px; } }
 .cover {
   position: relative;
   min-height: 800px;
