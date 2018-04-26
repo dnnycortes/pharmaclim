@@ -67,7 +67,7 @@
 	background: rgba(230, 231, 232, 0.7);
 	padding: 20px 0 0 0;
 	color: #685399;
-	.main-width{
+	> .main-width{
 		padding-bottom: 20px;
 	}
 	h2{
@@ -145,7 +145,7 @@
 	}
 	&.contacto{
 		p{
-			color: #FFFFFF;
+			color: $main-color;
 		}
 		.contact-form{
 			text-align: center;
@@ -217,6 +217,107 @@
 			margin-top: 15px;
 			width: 100%;
 			height: auto;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.cover {
+		.main-width {
+			padding-left: $padding;
+			padding-right: $padding;
+		}
+
+		h2 {
+			font-size: 30px;
+		}
+		&.quienes-somos, &.servicios, &.nosotros, &.clientes, &.noticias, &.contacto {
+			background-position: center !important;
+		}
+		&.quienes-somos {
+			min-height: 1400px;
+		}
+		&.servicios {
+			min-height: 2200px;
+		}
+		&.contacto {
+			min-height: 980px;
+		}
+	}
+	.content.quienes-somos {
+		> .main-width {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		h2 {
+			font-size: 24px;
+		}
+
+		p {
+			font-size: 15px;
+		}
+	}
+	.content.servicios {
+		> .main-width {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		h2 {
+			font-size: 24px;
+		}
+		ul {
+			margin-left: 20px;
+			font-size: 16px;
+
+			li {
+				line-height: 23px;
+
+				ul {
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+	.content.nosotros {
+		> .main-width {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		p {
+			font-size: 15px;
+		}
+	}
+	.content.clientes {
+		> .main-width {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.logos {
+			img {
+				width: 48%;
+				margin-bottom: 12px;
+			}
+		}
+	}
+	.content.noticias{
+		> .main-width {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.posts, .articles {
+			float: none; 
+			width: 100%;
+		}
+	}
+	.content.contacto {
+		> .main-width {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+	.post-opened {
+		.img {
+			width: 92%;
 		}
 	}
 }

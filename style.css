@@ -369,7 +369,8 @@ a {
         font-size: 26px;
         font-weight: lighter;
         margin-bottom: 15px;
-        line-height: 32px; }
+        line-height: 32px;
+        color: white; }
       .main-footer .main-width .quote span {
         float: right;
         font-size: 18px; }
@@ -380,19 +381,24 @@ a {
 
 @media screen and (max-width: 680px) {
   .main-footer {
-    padding: 0 20px; }
+    padding: 0 20px;
+    min-height: 90px; }
     .main-footer .main-width {
       background-size: 25%;
-      min-height: 90px; }
+      min-height: 90px;
+      padding-top: 12px;
+      padding-bottom: 12px; }
       .main-footer .main-width .quote {
-        width: 65%;
+        width: 73%;
         padding-top: 0; }
         .main-footer .main-width .quote p {
-          font-size: 18px;
-          line-height: 24px;
+          font-size: 15px;
+          line-height: 20px;
           margin-bottom: 0; }
           .main-footer .main-width .quote p br {
-            display: none; } }
+            display: none; }
+        .main-footer .main-width .quote span {
+          font-size: 15px; } }
 .social {
   margin-bottom: 10px; }
   .social a {
@@ -638,7 +644,7 @@ a {
   background: rgba(230, 231, 232, 0.7);
   padding: 20px 0 0 0;
   color: #685399; }
-  .content .main-width {
+  .content > .main-width {
     padding-bottom: 20px; }
   .content h2 {
     font-size: 28px;
@@ -692,7 +698,7 @@ a {
       width: 24%;
       margin-bottom: 45px; }
   .content.contacto p {
-    color: #FFFFFF; }
+    color: #675399; }
   .content.contacto .contact-form {
     text-align: center; }
     .content.contacto .contact-form input[type="text"], .content.contacto .contact-form input[type="email"] {
@@ -747,5 +753,68 @@ a {
       margin-top: 15px;
       width: 100%;
       height: auto; }
+
+@media screen and (max-width: 680px) {
+  .cover .main-width {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .cover h2 {
+    font-size: 30px; }
+  .cover.quienes-somos, .cover.servicios, .cover.nosotros, .cover.clientes, .cover.noticias, .cover.contacto {
+    background-position: center !important; }
+  .cover.quienes-somos {
+    min-height: 1400px; }
+  .cover.servicios {
+    min-height: 2200px; }
+  .cover.contacto {
+    min-height: 980px; }
+
+  .content.quienes-somos > .main-width {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .content.quienes-somos h2 {
+    font-size: 24px; }
+  .content.quienes-somos p {
+    font-size: 15px; }
+
+  .content.servicios > .main-width {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .content.servicios h2 {
+    font-size: 24px; }
+  .content.servicios ul {
+    margin-left: 20px;
+    font-size: 16px; }
+    .content.servicios ul li {
+      line-height: 23px; }
+      .content.servicios ul li ul {
+        margin-left: 20px; }
+
+  .content.nosotros > .main-width {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .content.nosotros p {
+    font-size: 15px; }
+
+  .content.clientes > .main-width {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .content.clientes .logos img {
+    width: 48%;
+    margin-bottom: 12px; }
+
+  .content.noticias > .main-width {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .content.noticias .posts, .content.noticias .articles {
+    float: none;
+    width: 100%; }
+
+  .content.contacto > .main-width {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .post-opened .img {
+    width: 92%; } }
 
 /*# sourceMappingURL=style.css.map */
