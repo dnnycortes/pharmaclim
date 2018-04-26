@@ -26,13 +26,12 @@ get_header(); ?>
 			una necesidad que derivó en un voto de confianza que honramos.</p>
 			<p>Sentimos una gran gratitud hacia todos los Clientes que nos dan su voto de confianza, 
 			nos retan, nos hacen crecer, nos hacen reinventarnos una y otra vez, todo con la 
-			finalidad de ofrecer un servicio que supere sus expectativas.Estamos a su disposición, 
+			finalidad de ofrecer un servicio que supere sus expectativas. Estamos a su disposición, 
 			esperando tener el enorme placer de servirles. </p>
 			<p>Reciban nuestra infinita gratitud por tenernos presentes y permitirnos ser parte de 
 			sus proveedores calificados, distinción que nos queremos ganar con dedicación, 
 			esfuerzo y amor por lo que hacemos.</p>
-			<p>Los saludamos con respeto y admiración, porque buscan soluciones por encima de l
-			as limitaciones presupuestales.</p>
+			<p>Los saludamos con respeto y admiración, porque buscan soluciones por encima de las limitaciones presupuestales.</p>
 			<p>Lourdes Molina <br> Directora Técnica.</p>
 
 		</div><!-- .main-width -->

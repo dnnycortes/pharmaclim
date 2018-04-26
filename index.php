@@ -25,7 +25,7 @@ get_header(); ?>
 		<p>Alcance a:</p>
 		<ul>
 			<li>· Desarrollo e implementación de la estrategia regulatoria para la obtención de autorizaciones (Licencias Sanitarias, CBPF, PSI, etc.) ante COFEPRIS.</li>
-			<li>· Desarrollo e implementación de estrategia regulatoria para obtener la aprobación de FDA (Food and Drug Administratio), HPB (Health Protection Branch), EMA (European Medicines Agency) y agencias sanitarias Latinoamericanas.</li>
+			<li>· Desarrollo e implementación de estrategia regulatoria para obtener la aprobación de FDA (Food and Drug Administration), HPB (Health Protection Branch), EMA (European Medicines Agency) y agencias sanitarias Latinoamericanas.</li>
 			<li>· Auditorías internas y a proveedores</li>
 			<li>· Capacitación a la medida</li>
 			<li>· Reclutamiento de personal y/o outsourcing </li>
@@ -48,45 +48,4 @@ get_header(); ?>
 		</li>
 	</ul>
 </div><!-- .wrap -->
-
-
-
-
-
-
-
-<!--
-<div class="slide one">
-	<a href="javascript:void(0);" class="btn-scroll">Scroll</a>
-	<p class="desc">Somos expertos en consultoría sobre Asuntos Regulatorios <br> y de cumplimiento de BPF para la industria:</p>
-	<div class="slide-info">
-		<div class="main-width">
-			<ul>
-				<li>Farmacéutica</li>
-				<li>Farmoquímica</li>
-				<li>Dispositivos médicos</li>
-				<li>Alimentaria</li>
-				<li>Cosmética</li>
-			</ul>
-		</div>
-	</div>
-</div>
-
-<div class="slide two">
-	<div class="slide-info">
-		<div class="main-width">
-			<p>Alcance a:</p>
-			<ul>
-				<li>Desarrollo e implementación de la estrategia regulatoria para la obtención de autorizaciones(Licencias Sanitarias, CBPF, PSI, etc.) ante COFEPRIS.</li>
-				<li>Desarrollo e implementación de estrategia regulatoria para obtener la aprobación de FDA(Food and Drug Administration), HPB(Health Protection Branch), EMA(European Medicines Agency) y agencias sanitarias Latinoamericanas.</li>
-				<li>Auditorías internas y a proveedores</li>
-				<li>Capacitación a la medida</li>
-				<li>Reclutamiento de personal y/o outsourcing.</li>
-				<li>Servicios de validación y calibración</li>
-				<li>Trámites ante COFEPRIS</li>
-			</ul>
-		</div>
-	</div>
-</div>
--->
 <?php get_footer(); ?>

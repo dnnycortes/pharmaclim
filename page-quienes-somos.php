@@ -22,7 +22,7 @@ get_header(); ?>
 				de cumplimiento normativo a través de estrategias regulatorias integrales y 
 				funcionales para mejorar y expandir sus operaciones locales e internacionales a
 				través de la importación, la fabricación y la exportación de insumos para la salud, 
-				alimentos y cosméticos
+				alimentos y cosméticos.
 			</p>
 			<h2>Visión</h2>
 			<p>
@@ -30,7 +30,7 @@ get_header(); ?>
 				Clientes soluciones integrales a asuntos regulatorios y de cumplimiento normativo, 
 				a través de inteligencia regulatoria y estrategias funcionales para mejorar y  
 				expandir las operaciones de fabricación, importación y exportación, de nuestros 
-				clientes que lograr que los insumos para la salud, alimentos y cosméticos mexicanos 
+				clientes para lograr que los insumos para la salud, alimentos y cosméticos mexicanos 
 				lleguen a todo el mundo y que lleguen a México las mejores propuestas del 
 				extranjero en términos de calidad, oportunidad y costo.
 			</p>

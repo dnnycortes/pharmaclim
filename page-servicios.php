@@ -57,7 +57,7 @@ get_header(); ?>
 					Capacitación 
 					<ul>
 						<li>· BPF (Buenas Prácticas de Fabricación)</li>
-						<li>· BPL (Buenas prácticas de Laboratorio)</li>
+						<li>· BPL (Buenas Prácticas de Laboratorio)</li>
 						<li>· BPAD (Buenas Prácticas de Almacenamiento y Distribución) </li>
 						<li>· Cursos a la medida de acuerdo con la DNC (Detección de las necesidades de capacitación) del Cliente</li>
 					</ul>
@@ -65,15 +65,15 @@ get_header(); ?>
 				<li>
 					Reclutamiento de personal con o sin servicio de outsourcing para:
 					<ul>
-						<li>· Implementación de procesos o capitalización de proyectos específicos.</li>
-						<li>· Realizar funciones establecidas en una descripción de puesto.</li>
+						<li>· Implementación de procesos o capitalización de proyectos específicos</li>
+						<li>· Realizar funciones establecidas en una descripción de puesto</li>
 					</ul>
 				</li>
 				<li>
 					Gestoría de trámites ante autoridades sanitarias (COFEPRIS)
 				</li>
 				<li>
-					Servicios de Validación y Calibración a través de proveedores bajo contrato comercial y acuerdo de calidad.
+					Servicios de Validación y Calibración a través de proveedores bajo contrato comercial y acuerdo de calidad
 				</li>
 			</ul>
 		</div><!-- .main-width -->
