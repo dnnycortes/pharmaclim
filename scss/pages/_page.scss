@@ -52,6 +52,7 @@
 	}
 	&.contacto{
 		background-image: url(images/cover-contacto.jpg);
+		min-height: 1088px;
 	}
 	&.noticias{
 		background-image: url(images/cover-noticias.jpg);
@@ -144,6 +145,7 @@
 		}
 	}
 	&.contacto{
+		background: rgba(230, 231, 232, 0.85);
 		p{
 			color: $main-color;
 		}
@@ -168,6 +170,15 @@
 				padding: 0 16px;
 				border-radius: 6px;
 				border: 0;
+			}
+		}
+		.contact-info {
+			display: flex;
+			div {
+				width: 50%;
+				a {
+					color: gray;
+				}
 			}
 		}
 	}
@@ -313,6 +324,12 @@
 		> .main-width {
 			padding-left: 15px;
 			padding-right: 15px;
+		}
+		.contact-info {
+			flex-wrap: wrap;
+			div {
+				width: 100%;
+			}
 		}
 	}
 	.post-opened {

@@ -131,7 +131,7 @@ $(document).ready(function(){
 
 		if( $(document).scrollTop() > 100 ){
 			$('.content.contacto').css({
-				top: '50%'
+				top: '30%'
 			});
 		} else {
 			$('.content.contacto').css({

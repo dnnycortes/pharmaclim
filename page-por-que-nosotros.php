@@ -16,7 +16,7 @@ get_header(); ?>
 	</div>
 	<div class="content nosotros" id="nosotros">
 		<div class="main-width">
-			<p>Pharma CLIM Services S.A de C.V es una empresa joven, vigorosa, llena de energía y 
+			<p>Pharma CLIM Services S.A de C.V. es una empresa joven, vigorosa, llena de energía y 
 			entusiasmo que ofrece soluciones integrales a las necesidades de sus Clientes. 
 			Nuestro secreto es sinergizar nuestro talento con el de nuestro Cliente y en muchas 
 			ocasiones, el talento de terceros con los que tenemos alianzas estratégicas y 

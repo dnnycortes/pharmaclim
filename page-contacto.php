@@ -22,11 +22,29 @@ get_header(); ?>
 				<div class="contact-form">
 					<?php the_content(); ?>
 				</div>
-				<p>
-					Montecito 38 Piso 42 oficina 15, <br>
-					Colonia Nápoles, Delegación Benito Juárez, Código Postal 03810 <br>
-					Ciudad De México
-				</p>
+				<div class="contact-info">
+					<div>
+						<p>
+							Montecito 38 Piso 42 oficina 15, <br>
+							Colonia Nápoles, Delegación Benito Juárez, Código Postal 03810 <br>
+							Ciudad De México
+						</p>
+					</div>
+					<div>
+						<p>
+							QFB. Lourdes Amelia Molina Rincón <br>
+							Regulatory & GMP Compliance Consultant <br>
+							Cel. 52 1 55 28 64 90 03 <br>
+							<a href="mailto:lomr@pharmaclims.com" target="_top">lomr@pharmaclims.com</a>
+						</p>
+						<p>
+							Lic. Jesús Miguel Quintana Cámara <br>
+							Supply Chain Consultant <br>
+							Cel. 52 1 55 39 89 26 47 <br>
+							<a href="mailto:jmqc@pharmaclims.com" target="_top">jmqc@pharmaclims.com</a>
+						</p>
+					</div>
+				</div>
 			<?php endwhile; else: ?>
 				<p><?php _e('Lo sentimos, ningún post cumple con los criterios de búsqueda.'); ?></p>
 			<?php endif; ?>
