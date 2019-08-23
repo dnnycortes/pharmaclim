@@ -347,7 +347,7 @@ a {
       .main-menu .menu li a:hover {
         color: #FFFFFF; }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 600px) {
   .main-header {
     padding-left: 3%;
     padding-right: 3%;
@@ -379,7 +379,7 @@ a {
   background: #000000;
   min-height: 30px; }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 600px) {
   .main-footer {
     padding: 0 20px;
     min-height: 90px; }
@@ -576,7 +576,7 @@ a {
         .slide-menu li a:hover span {
           background: #b194f8; }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 600px) {
   .slide-menu {
     display: none; }
 
@@ -692,12 +692,17 @@ a {
     font-size: 17px; }
   .content.clientes .logos {
     display: flex;
-    align-items: baseline;
     justify-content: space-between;
     flex-wrap: wrap; }
-    .content.clientes .logos img {
-      width: 24%;
-      margin-bottom: 45px; }
+    .content.clientes .logos .client {
+      align-items: center;
+      background: white;
+      display: flex;
+      height: 126px;
+      justify-content: center;
+      margin-bottom: 1rem;
+      padding: 10px;
+      width: 215px; }
   .content.contacto {
     background: rgba(230, 231, 232, 0.85); }
     .content.contacto p {

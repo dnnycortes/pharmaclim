@@ -12,35 +12,13 @@ add_filter( 'body_class', 'add_slug_body_class' );
 
 /* Área de widget*/
 if (function_exists('register_sidebar')) {
-	register_sidebar(array(
-		'name' => 'Sidebar Widgets',
-		'id'   => 'sidebar-widgets',
-		'description'   => 'Area de Widget',
-		'before_widget' => '<div id="one" class="two">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2>',
-		'after_title'   => '</h2>'
-	));
-	
-	register_sidebar(array(
-		'name' => 'Sidebar Widgets Secundario',
-		'id'   => 'sidebar-widgets-secundario',
-		'description'   => 'Area de Widget',
-		'before_widget' => '<div id="one" class="two">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2>',
-		'after_title'   => '</h2>'
-	));
-
-	register_sidebar(array(
-		'name' => 'Contacto',
-		'id'   => 'contact-form',
-		'description'   => 'Area de Widget',
-		'before_widget' => '<div id="one" class="two">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2>',
-		'after_title'   => '</h2>'
-	));
+	register_sidebar( array(
+		'name' => 'Clientes',
+		'id' => 'clients-logos',
+		'description' => 'Area de Widget',
+		'before_widget' => '<div class="client">',
+		'after_widget'  => '</div>'
+	) );
 }
 
 /* Registra los menus del sitio */

@@ -135,12 +135,18 @@
 	&.clientes{
 		.logos{
 			display: flex;
-			align-items: baseline;
 			justify-content: space-between;
 			flex-wrap: wrap;
-			img{
-				width: 24%;
-				margin-bottom: 45px;
+
+			.client {
+				align-items: center;
+				background: white;
+				display: flex;
+				height: 126px;
+				justify-content: center;
+				margin-bottom: 1rem;
+				padding: 10px;
+				width: 215px;
 			}
 		}
 	}
