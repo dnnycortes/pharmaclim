@@ -247,13 +247,13 @@ mark {
 -------------------------------------------------------------------------------*/
 /* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 ::-moz-selection {
-  background: #6d6e70;
-  color: #675399;
+  background: #675399;
+  color: white;
   text-shadow: none; }
 
 ::selection {
-  background: #6d6e70;
-  color: #675399;
+  background: #675399;
+  color: white;
   text-shadow: none; }
 
 body, html {
@@ -741,6 +741,8 @@ a {
     margin-bottom: 25px; }
     .content.noticias ul li a {
       color: #685399; }
+  .content.privacidad {
+    padding-top: 150px; }
 
 .post-opened {
   position: fixed;
