@@ -10,7 +10,7 @@ get_header(); ?>
 <div id="wrapper">
 	<div class="cover quienes-somos">
 		<div class="main-width">
-			<h2>Quiénes somos</h2>
+			<h2>Who we are</h2>
 			<a href="#quienes-somos" class="btn-scroll">Scroll</a>
 		</div>
 	</div>
@@ -18,11 +18,11 @@ get_header(); ?>
 		<div class="main-width">
 			<!--EMPIEZA EL LOOP-->
 				<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-					<h2>Misión</h2>
+					<h2>Mission</h2>
 					<p><?php echo get_post_meta($post->ID, 'mision', true); ?></p>
-					<h2>Visión</h2>
+					<h2>Vision</h2>
 					<p><?php echo get_post_meta($post->ID, 'vision', true); ?></p>
-					<h2>Valores</h2>
+					<h2>Values</h2>
 					<p><?php echo get_post_meta($post->ID, 'valores', true); ?></p>
 				<?php endwhile; else: ?>
 					<p><?php _e('Lo sentimos, ningún post cumple con los criterios de búsqueda.'); ?></p>
