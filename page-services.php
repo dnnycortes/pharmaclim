@@ -10,7 +10,7 @@ get_header(); ?>
 <div id="wrapper">
 	<div class="cover servicios">
 		<div class="main-width">
-			<h2>Servicios</h2>
+			<h2>Services</h2>
 			<a href="#servicios" class="btn-scroll">Scroll</a>
 		</div>
 	</div>
