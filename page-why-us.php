@@ -10,7 +10,7 @@ get_header(); ?>
 <div id="wrapper">
 	<div class="cover nosotros">
 		<div class="main-width">
-			<h2>¿Por qué nosotros?</h2>
+			<h2>Why us?</h2>
 			<a href="#nosotros" class="btn-scroll">Scroll</a>
 		</div>
 	</div>
