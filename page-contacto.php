@@ -26,7 +26,7 @@ get_header(); ?>
 					<div>
 						<p>
 							Montecito 38 Piso 42 oficina 15, <br>
-							Colonia Nápoles, Delegación Benito Juárez, Código Postal 03810 <br>
+							Colonia Nápoles, Alcaldía Benito Juárez, Código Postal 03810 <br>
 							Ciudad De México
 						</p>
 					</div>
