@@ -33,13 +33,13 @@ get_header(); ?>
 					<div>
 						<p>
 							QFB. Lourdes Amelia Molina Rincón <br>
-							Regulatory & GMP Compliance Consultant <br>
+							Technical director <br>
 							Cel. 52 1 55 28 64 90 03 <br>
 							<a href="mailto:lomr@pharmaclims.com" target="_top">lomr@pharmaclims.com</a>
 						</p>
 						<p>
 							Lic. Jesús Miguel Quintana Cámara <br>
-							Supply Chain Consultant <br>
+							Director of Finance and Administration <br>
 							Cel. 52 1 55 39 89 26 47 <br>
 							<a href="mailto:jmqc@pharmaclims.com" target="_top">jmqc@pharmaclims.com</a>
 						</p>
