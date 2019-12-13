@@ -35,7 +35,7 @@
 	.social-icons{
 		position: absolute;
 		top: 0;
-		right: 0;
+		right: 30px;
 		.social{
 			text-indent: -9999999px;
 			width: 18px;
@@ -48,6 +48,19 @@
 			&.instagram{
 				background: url(images/social-instagram.png) no-repeat;
 				background-size: 100% auto;
+			}
+		}
+	}
+	.language-switch {
+		position: absolute;
+		top: 0;
+		right: 0;
+		ul {
+			li {
+				img {
+					//width: 20px;
+					//height: auto;
+				}
 			}
 		}
 	}

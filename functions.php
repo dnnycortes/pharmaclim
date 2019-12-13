@@ -19,6 +19,13 @@ if (function_exists('register_sidebar')) {
 		'before_widget' => '<div class="client">',
 		'after_widget'  => '</div>'
 	) );
+	register_sidebar( array(
+		'name' => 'Language',
+		'id' => 'language-switch',
+		'description' => 'Area de Widget',
+		'before_widget' => '<div class="language-switch">',
+		'after_widget'  => '</div>'
+	) );
 }
 
 /* Registra los menus del sitio */

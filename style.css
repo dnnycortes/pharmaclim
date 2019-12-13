@@ -311,7 +311,7 @@ a {
   .main-header .social-icons {
     position: absolute;
     top: 0;
-    right: 0; }
+    right: 30px; }
     .main-header .social-icons .social {
       text-indent: -9999999px;
       width: 18px;
@@ -323,6 +323,10 @@ a {
       .main-header .social-icons .social.instagram {
         background: url(images/social-instagram.png) no-repeat;
         background-size: 100% auto; }
+  .main-header .language-switch {
+    position: absolute;
+    top: 0;
+    right: 0; }
 
 .main-menu {
   background: #414042;
